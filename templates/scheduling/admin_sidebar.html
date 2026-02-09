@@ -1,0 +1,43 @@
+{% load static %}
+
+<!-- Admin Sidebar -->
+<nav id="sidebar" class="bg-dark">
+    <div class="sidebar-header">
+        <h3>Classroom Scheduling</h3>
+    </div>
+
+    <ul class="list-unstyled components">
+        <!-- Dashboard Link -->
+        <li>
+            <a href="{% url 'admin_dashboard' %}"><i class="fas fa-tachometer-alt me-2"></i>Admin Dashboard</a>
+        </li>
+
+        <hr class="sidebar-divider my-2">
+
+        <!-- Admin Navigation -->
+        <li class="sidebar-heading">
+            <span class="text-light">Admin Navigation</span>
+        </li>
+        <li>
+            <a href="{% url 'classroom_list' %}"><i class="fas fa-door-open me-2"></i>Classrooms</a>
+        </li>
+        <li>
+            <a href="{% url 'teacher_list' %}"><i class="fas fa-chalkboard-teacher me-2"></i>Teachers</a>
+        </li>
+        <li>
+            <a href="{% url 'subject_list' %}"><i class="fas fa-book me-2"></i>Subjects</a>
+        </li>
+        <li>
+            <a href="{% url 'schedule_list' %}"><i class="fas fa-calendar-alt me-2"></i>Schedules</a>
+        </li>
+        <li>
+            <a href="{% url 'student_list' %}"><i class="fas fa-user-graduate me-2"></i>Students</a>
+        </li>
+        <li>
+            <a href="{% url 'enroll_student' %}"><i class="fas fa-user-plus me-2"></i>Enroll Students</a>
+        </li>
+        <li>
+            <a href="{% url 'user_list' %}"><i class="fas fa-users me-2"></i>User List</a>
+        </li>
+    </ul>
+</nav> 

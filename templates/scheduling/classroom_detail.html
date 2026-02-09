@@ -1,0 +1,88 @@
+{% extends "base.html" %}
+
+{% block title %}{{ classroom.room_number }} - Classroom Scheduling System{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-8">
+            <div class="card shadow mb-4">
+                <div class="card-header">
+                    <h2 class="h4 mb-0">Classroom Details</h2>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p><strong>Room Number:</strong> {{ classroom.room_number }}</p>
+                            <p><strong>Capacity:</strong> {{ classroom.capacity }} students</p>
+                            <p>
+                                <strong>Status:</strong>
+                                <span class="badge {% if classroom.is_active %}bg-success{% else %}bg-danger{% endif %}">
+                                    {{ classroom.is_active|yesno:"Active,Inactive" }}
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card shadow">
+                <div class="card-header">
+                    <h3 class="h5 mb-0">Current Schedule</h3>
+                </div>
+                <div class="card-body">
+                    {% if schedules %}
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Days</th>
+                                    <th>Time</th>
+                                    <th>Subject</th>
+                                    <th>Teacher</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for schedule in schedules %}
+                                <tr>
+                                    <td>{{ schedule.get_days_display }}</td>
+                                    <td>{{ schedule.start_time|time:"H:i" }} - {{ schedule.end_time|time:"H:i" }}</td>
+                                    <td>{{ schedule.subject.name }}</td>
+                                    <td>{{ schedule.subject.teacher.full_name }}</td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                    {% else %}
+                    <p class="text-muted text-center my-3">No schedules assigned to this classroom yet.</p>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card shadow">
+                <div class="card-header">
+                    <h3 class="h5 mb-0">Actions</h3>
+                </div>
+                <div class="card-body">
+                    <div class="d-grid gap-2">
+                        <a href="{% url 'classroom_list' %}" class="btn btn-secondary">
+                            <i class="fas fa-arrow-left"></i> Back to List
+                        </a>
+                        {% if user.is_superuser %}
+                        <a href="{% url 'classroom_update' classroom.pk %}" class="btn btn-warning">
+                            <i class="fas fa-edit"></i> Edit Classroom
+                        </a>
+                        <a href="{% url 'classroom_delete' classroom.pk %}" class="btn btn-danger">
+                            <i class="fas fa-trash"></i> Delete Classroom
+                        </a>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

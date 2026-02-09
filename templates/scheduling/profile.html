@@ -1,0 +1,87 @@
+{% extends "base.html" %}
+
+{% block title %}My Profile - Classroom Scheduling System{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow">
+                <div class="card-header bg-primary text-white">
+                    <h2 class="h4 mb-0">My Profile</h2>
+                </div>
+                <div class="card-body">
+                    <div class="text-center mb-4">
+                        <div class="avatar-circle mb-3">
+                            <i class="fas fa-user-circle fa-5x text-primary"></i>
+                        </div>
+                        <h3 class="h5">{{ user.username }}</h3>
+                        <p class="text-muted mb-0">
+                            <span class="badge {% if user.is_superuser %}bg-danger{% else %}bg-primary{% endif %}">
+                                {% if user.is_superuser %}Administrator{% else %}User{% endif %}
+                            </span>
+                        </p>
+                    </div>
+
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="form-label text-muted">Username</label>
+                                <input type="text" class="form-control" value="{{ user.username }}" readonly>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="form-label text-muted">Email</label>
+                                <input type="email" class="form-control" value="{{ user.email }}" readonly>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="form-label text-muted">Date Joined</label>
+                                <input type="text" class="form-control" value="{{ user.date_joined|date:'F j, Y' }}" readonly>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="form-label text-muted">Last Login</label>
+                                <input type="text" class="form-control" value="{{ user.last_login|date:'F j, Y H:i' }}" readonly>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-between mt-4">
+                        <a href="{% url 'home' %}" class="btn btn-secondary">
+                            <i class="fas fa-arrow-left me-1"></i>
+                            Back to Dashboard
+                        </a>
+                        <div class="btn-group">
+                            <a href="{% url 'password_change' %}" class="btn btn-primary">
+                                <i class="fas fa-key me-1"></i>
+                                Change Password
+                            </a>
+                            <a href="{% url 'logout' %}" class="btn btn-danger">
+                                <i class="fas fa-sign-out-alt me-1"></i>
+                                Logout
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+.avatar-circle {
+    width: 100px;
+    height: 100px;
+    background-color: #f8f9fa;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+</style>
+{% endblock %}

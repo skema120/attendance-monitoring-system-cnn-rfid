@@ -1,0 +1,621 @@
+INFO 2025-05-24 19:23:16,005 autoreload Watching for file changes with StatReloader
+INFO 2025-05-24 19:27:47,793 basehttp "GET /teacher/dashboard/ HTTP/1.1" 200 36019
+INFO 2025-05-26 14:14:28,627 autoreload Watching for file changes with StatReloader
+INFO 2025-05-26 15:31:23,327 basehttp "GET /system/dashboard/ HTTP/1.1" 200 19507
+INFO 2025-05-26 15:31:24,112 basehttp "GET /static/webs/plugins/datatables-responsive/css/responsive.bootstrap4.min.css HTTP/1.1" 200 4301
+INFO 2025-05-26 15:31:24,202 basehttp "GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 200 80420
+INFO 2025-05-26 15:31:24,045 basehttp "GET /static/webs/plugins/datatables-buttons/css/buttons.bootstrap4.min.css HTTP/1.1" 200 9000
+INFO 2025-05-26 15:31:24,189 basehttp "GET /static/js/notifications.js HTTP/1.1" 200 2771
+INFO 2025-05-26 15:31:24,012 basehttp "GET /static/css/bootstrap.min.css HTTP/1.1" 200 194900
+INFO 2025-05-26 15:31:24,572 basehttp "GET /static/webs/plugins/datatables/jquery.dataTables.min.js HTTP/1.1" 200 87956
+INFO 2025-05-26 15:31:24,459 basehttp "GET /static/webs/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js HTTP/1.1" 200 4520
+INFO 2025-05-26 15:31:24,471 basehttp "GET /static/webs/plugins/datatables-responsive/js/dataTables.responsive.min.js HTTP/1.1" 200 16849
+INFO 2025-05-26 15:31:24,809 basehttp "GET /static/webs/plugins/jquery/jquery.min.js HTTP/1.1" 200 89501
+INFO 2025-05-26 15:31:25,219 basehttp "GET /static/webs/plugins/jszip/jszip.min.js HTTP/1.1" 200 95778
+INFO 2025-05-26 15:31:24,642 basehttp "GET /static/webs/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css HTTP/1.1" 200 7496
+INFO 2025-05-26 15:31:25,254 basehttp "GET /static/webs/plugins/jquery-ui/jquery-ui.min.js HTTP/1.1" 200 254921
+INFO 2025-05-26 15:31:25,327 basehttp "GET /static/webs/plugins/datatables-responsive/js/responsive.bootstrap4.min.js HTTP/1.1" 200 3661
+INFO 2025-05-26 15:31:25,444 basehttp "GET /static/webs/plugins/datatables-buttons/js/buttons.bootstrap4.min.js HTTP/1.1" 200 1443
+INFO 2025-05-26 15:31:25,475 basehttp "GET /static/webs/plugins/datatables-buttons/js/dataTables.buttons.min.js HTTP/1.1" 200 25183
+INFO 2025-05-26 15:31:25,707 basehttp "GET /static/webs/plugins/datatables-buttons/js/buttons.colVis.min.js HTTP/1.1" 200 3198
+INFO 2025-05-26 15:31:25,605 basehttp "GET /static/webs/plugins/pdfmake/vfs_fonts.js HTTP/1.1" 200 812001
+INFO 2025-05-26 15:31:25,827 basehttp "GET /static/webs/plugins/datatables-buttons/js/buttons.html5.min.js HTTP/1.1" 200 25103
+INFO 2025-05-26 15:31:25,808 basehttp "GET /static/webs/plugins/datatables-buttons/js/buttons.print.min.js HTTP/1.1" 200 2514
+INFO 2025-05-26 15:31:26,932 basehttp "GET /static/webs/plugins/pdfmake/pdfmake.min.js HTTP/1.1" 200 1348857
+INFO 2025-05-26 15:38:33,935 autoreload C:\Users\dokdo\ams_cnn\classroom_scheduling\settings.py changed, reloading.
+INFO 2025-05-26 15:38:57,936 autoreload Watching for file changes with StatReloader
+INFO 2025-05-26 15:40:53,096 basehttp "GET / HTTP/1.1" 302 0
+INFO 2025-05-26 15:40:53,141 basehttp "GET /login/?next=/ HTTP/1.1" 200 7738
+WARNING 2025-05-26 15:40:54,461 log Not Found: /favicon.ico
+WARNING 2025-05-26 15:40:54,461 basehttp "GET /favicon.ico HTTP/1.1" 404 13545
+INFO 2025-05-26 15:41:00,312 basehttp "POST /login/ HTTP/1.1" 302 0
+INFO 2025-05-26 15:41:00,334 basehttp "GET / HTTP/1.1" 302 0
+INFO 2025-05-26 15:41:00,353 basehttp "GET /login/?next=/ HTTP/1.1" 200 7738
+INFO 2025-05-26 15:41:09,620 basehttp "POST /login/ HTTP/1.1" 302 0
+INFO 2025-05-26 15:41:09,634 basehttp "GET / HTTP/1.1" 302 0
+INFO 2025-05-26 15:41:09,649 basehttp "GET /login/?next=/ HTTP/1.1" 200 7738
+INFO 2025-05-26 15:42:33,710 basehttp "POST /login/ HTTP/1.1" 302 0
+INFO 2025-05-26 15:42:33,719 basehttp "GET / HTTP/1.1" 302 0
+INFO 2025-05-26 15:42:33,738 basehttp "GET /login/?next=/ HTTP/1.1" 200 7738
+INFO 2025-05-26 15:48:21,141 autoreload Watching for file changes with StatReloader
+INFO 2025-05-26 15:48:43,421 basehttp "GET /login/?next=/ HTTP/1.1" 200 7738
+INFO 2025-05-26 15:48:49,931 basehttp "POST /login/ HTTP/1.1" 302 0
+INFO 2025-05-26 15:48:49,951 basehttp "GET / HTTP/1.1" 302 0
+INFO 2025-05-26 15:48:50,117 basehttp "GET /system/dashboard/ HTTP/1.1" 200 19507
+INFO 2025-05-26 15:48:50,310 basehttp "GET /static/css/bootstrap.min.css HTTP/1.1" 200 194900
+INFO 2025-05-26 15:48:50,393 basehttp "GET /static/js/notifications.js HTTP/1.1" 200 2771
+INFO 2025-05-26 15:48:50,417 basehttp "GET /static/webs/plugins/datatables-buttons/css/buttons.bootstrap4.min.css HTTP/1.1" 200 9000
+INFO 2025-05-26 15:48:50,420 basehttp "GET /static/webs/plugins/datatables-responsive/css/responsive.bootstrap4.min.css HTTP/1.1" 200 4301
+INFO 2025-05-26 15:48:50,420 basehttp "GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 200 80420
+INFO 2025-05-26 15:48:50,445 basehttp "GET /static/webs/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js HTTP/1.1" 200 4520
+INFO 2025-05-26 15:48:50,420 basehttp "GET /static/webs/plugins/jquery/jquery.min.js HTTP/1.1" 200 89501
+INFO 2025-05-26 15:48:50,457 basehttp "GET /static/webs/plugins/datatables/jquery.dataTables.min.js HTTP/1.1" 304 0
+INFO 2025-05-26 15:48:50,439 basehttp "GET /static/webs/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css HTTP/1.1" 200 7496
+INFO 2025-05-26 15:48:50,469 basehttp "GET /static/webs/plugins/datatables-responsive/js/dataTables.responsive.min.js HTTP/1.1" 304 0
+INFO 2025-05-26 15:48:50,468 basehttp "GET /static/webs/plugins/datatables-buttons/js/buttons.bootstrap4.min.js HTTP/1.1" 304 0
+INFO 2025-05-26 15:48:50,461 basehttp "GET /static/webs/plugins/datatables-responsive/js/responsive.bootstrap4.min.js HTTP/1.1" 304 0
+INFO 2025-05-26 15:48:50,492 basehttp "GET /static/webs/plugins/jszip/jszip.min.js HTTP/1.1" 304 0
+INFO 2025-05-26 15:48:50,480 basehttp "GET /static/webs/plugins/jquery-ui/jquery-ui.min.js HTTP/1.1" 200 254921
+INFO 2025-05-26 15:48:50,505 basehttp "GET /static/webs/plugins/pdfmake/vfs_fonts.js HTTP/1.1" 304 0
+INFO 2025-05-26 15:48:50,511 basehttp "GET /static/webs/plugins/pdfmake/pdfmake.min.js HTTP/1.1" 304 0
+INFO 2025-05-26 15:48:50,519 basehttp "GET /static/webs/plugins/datatables-buttons/js/buttons.colVis.min.js HTTP/1.1" 304 0
+INFO 2025-05-26 15:48:50,493 basehttp "GET /static/webs/plugins/datatables-buttons/js/dataTables.buttons.min.js HTTP/1.1" 304 0
+INFO 2025-05-26 15:48:50,519 basehttp "GET /static/webs/plugins/datatables-buttons/js/buttons.print.min.js HTTP/1.1" 304 0
+INFO 2025-05-26 15:48:50,510 basehttp "GET /static/webs/plugins/datatables-buttons/js/buttons.html5.min.js HTTP/1.1" 304 0
+INFO 2025-05-26 15:49:05,955 basehttp "GET /logout/ HTTP/1.1" 302 0
+INFO 2025-05-26 15:49:05,964 basehttp "GET /login/ HTTP/1.1" 200 7738
+INFO 2025-05-26 15:49:45,538 autoreload Watching for file changes with StatReloader
+INFO 2025-05-26 15:50:01,087 basehttp "GET /system/dashboard/ HTTP/1.1" 200 19507
+INFO 2025-05-26 15:50:01,285 basehttp "GET /static/css/bootstrap.min.css HTTP/1.1" 200 194900
+INFO 2025-05-26 15:50:01,376 basehttp "GET /static/webs/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css HTTP/1.1" 200 7496
+INFO 2025-05-26 15:50:01,478 basehttp "GET /static/webs/plugins/datatables-responsive/css/responsive.bootstrap4.min.css HTTP/1.1" 200 4301
+INFO 2025-05-26 15:50:01,487 basehttp "GET /static/webs/plugins/datatables-buttons/css/buttons.bootstrap4.min.css HTTP/1.1" 200 9000
+INFO 2025-05-26 15:50:01,507 basehttp "GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 200 80420
+INFO 2025-05-26 15:50:01,575 basehttp "GET /teacher/dashboard/ HTTP/1.1" 200 29756
+INFO 2025-05-26 15:50:01,763 basehttp "GET /static/js/notifications.js HTTP/1.1" 200 2771
+INFO 2025-05-26 15:50:01,767 basehttp "GET /static/js/notifications.js HTTP/1.1" 304 0
+INFO 2025-05-26 15:50:01,772 basehttp "GET /static/webs/plugins/jquery/jquery.min.js HTTP/1.1" 200 89501
+INFO 2025-05-26 15:50:02,185 basehttp "GET /static/webs/plugins/jquery-ui/jquery-ui.min.js HTTP/1.1" 200 254921
+INFO 2025-05-26 15:50:02,285 basehttp "GET /static/webs/plugins/datatables/jquery.dataTables.min.js HTTP/1.1" 200 87956
+INFO 2025-05-26 15:50:02,285 basehttp "GET /static/webs/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js HTTP/1.1" 200 4520
+INFO 2025-05-26 15:50:02,424 basehttp "GET /static/webs/plugins/datatables-responsive/js/responsive.bootstrap4.min.js HTTP/1.1" 200 3661
+INFO 2025-05-26 15:50:02,425 basehttp "GET /static/webs/plugins/datatables-responsive/js/dataTables.responsive.min.js HTTP/1.1" 200 16849
+INFO 2025-05-26 15:50:02,449 basehttp "GET /static/webs/plugins/datatables-buttons/js/dataTables.buttons.min.js HTTP/1.1" 200 25183
+INFO 2025-05-26 15:50:02,640 basehttp "GET /static/webs/plugins/datatables-buttons/js/buttons.bootstrap4.min.js HTTP/1.1" 200 1443
+INFO 2025-05-26 15:50:02,655 basehttp "GET /static/webs/plugins/jszip/jszip.min.js HTTP/1.1" 200 95778
+INFO 2025-05-26 15:50:02,702 basehttp "GET /static/webs/plugins/pdfmake/pdfmake.min.js HTTP/1.1" 200 1348857
+INFO 2025-05-26 15:50:02,725 basehttp "GET /static/webs/plugins/datatables-buttons/js/buttons.html5.min.js HTTP/1.1" 200 25103
+INFO 2025-05-26 15:50:02,749 basehttp "GET /static/webs/plugins/pdfmake/vfs_fonts.js HTTP/1.1" 200 812001
+INFO 2025-05-26 15:50:02,791 basehttp "GET /static/webs/plugins/datatables-buttons/js/buttons.colVis.min.js HTTP/1.1" 200 3198
+INFO 2025-05-26 15:50:02,790 basehttp "GET /static/webs/plugins/datatables-buttons/js/buttons.print.min.js HTTP/1.1" 200 2514
+INFO 2025-05-26 16:00:33,160 basehttp "GET /system/dashboard/ HTTP/1.1" 200 19507
+INFO 2025-05-26 16:00:33,408 basehttp "GET /static/css/bootstrap.min.css HTTP/1.1" 200 194900
+INFO 2025-05-26 16:00:33,443 basehttp "GET /static/webs/plugins/jquery/jquery.min.js HTTP/1.1" 200 89501
+INFO 2025-05-26 16:00:33,453 basehttp "GET /static/js/notifications.js HTTP/1.1" 200 2771
+INFO 2025-05-26 16:00:33,524 basehttp "GET /static/webs/plugins/datatables-buttons/css/buttons.bootstrap4.min.css HTTP/1.1" 200 9000
+INFO 2025-05-26 16:00:33,539 basehttp "GET /static/webs/plugins/jquery-ui/jquery-ui.min.js HTTP/1.1" 200 254921
+INFO 2025-05-26 16:00:33,588 basehttp "GET /static/webs/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css HTTP/1.1" 200 7496
+INFO 2025-05-26 16:00:33,536 basehttp "GET /static/webs/plugins/datatables/jquery.dataTables.min.js HTTP/1.1" 200 87956
+INFO 2025-05-26 16:00:33,560 basehttp "GET /static/webs/plugins/datatables-responsive/css/responsive.bootstrap4.min.css HTTP/1.1" 200 4301
+INFO 2025-05-26 16:00:33,619 basehttp "GET /static/webs/plugins/datatables-responsive/js/dataTables.responsive.min.js HTTP/1.1" 200 16849
+INFO 2025-05-26 16:00:33,504 basehttp "GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 200 80420
+INFO 2025-05-26 16:00:33,655 basehttp "GET /static/webs/plugins/datatables-buttons/js/dataTables.buttons.min.js HTTP/1.1" 200 25183
+INFO 2025-05-26 16:00:33,661 basehttp "GET /static/webs/plugins/datatables-responsive/js/responsive.bootstrap4.min.js HTTP/1.1" 200 3661
+INFO 2025-05-26 16:00:33,665 basehttp "GET /static/webs/plugins/jszip/jszip.min.js HTTP/1.1" 200 95778
+INFO 2025-05-26 16:00:33,657 basehttp "GET /static/webs/plugins/datatables-buttons/js/buttons.bootstrap4.min.js HTTP/1.1" 200 1443
+INFO 2025-05-26 16:00:33,666 basehttp "GET /static/webs/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js HTTP/1.1" 200 4520
+INFO 2025-05-26 16:00:33,702 basehttp "GET /static/webs/plugins/datatables-buttons/js/buttons.print.min.js HTTP/1.1" 200 2514
+INFO 2025-05-26 16:00:33,711 basehttp "GET /static/webs/plugins/datatables-buttons/js/buttons.colVis.min.js HTTP/1.1" 200 3198
+INFO 2025-05-26 16:00:33,720 basehttp "GET /static/webs/plugins/datatables-buttons/js/buttons.html5.min.js HTTP/1.1" 200 25103
+INFO 2025-05-26 16:00:33,834 basehttp "GET /static/webs/plugins/pdfmake/vfs_fonts.js HTTP/1.1" 200 812001
+INFO 2025-05-26 16:00:33,855 basehttp "GET /static/webs/plugins/pdfmake/pdfmake.min.js HTTP/1.1" 200 1348857
+INFO 2025-05-26 16:00:47,675 basehttp "GET /attendance/history/ HTTP/1.1" 200 16081
+INFO 2025-05-26 16:00:54,142 basehttp "GET /attendance/history/?date=2025-05-23 HTTP/1.1" 200 18763
+INFO 2025-05-26 16:00:54,232 basehttp "GET /static/css/bootstrap.min.css HTTP/1.1" 200 194900
+INFO 2025-05-26 16:00:54,248 basehttp "GET /static/webs/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css HTTP/1.1" 200 7496
+INFO 2025-05-26 16:00:54,262 basehttp "GET /static/webs/plugins/jquery/jquery.min.js HTTP/1.1" 200 89501
+INFO 2025-05-26 16:00:54,320 basehttp "GET /static/webs/plugins/datatables-buttons/css/buttons.bootstrap4.min.css HTTP/1.1" 200 9000
+INFO 2025-05-26 16:00:54,295 basehttp "GET /static/webs/plugins/datatables-responsive/css/responsive.bootstrap4.min.css HTTP/1.1" 200 4301
+INFO 2025-05-26 16:00:54,321 basehttp "GET /static/webs/plugins/jquery-ui/jquery-ui.min.js HTTP/1.1" 200 254921
+INFO 2025-05-26 16:00:54,444 basehttp "GET /static/webs/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js HTTP/1.1" 200 4520
+INFO 2025-05-26 16:00:54,400 basehttp "GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 200 80420
+INFO 2025-05-26 16:00:54,403 basehttp "GET /static/webs/plugins/datatables-responsive/js/dataTables.responsive.min.js HTTP/1.1" 200 16849
+INFO 2025-05-26 16:00:54,426 basehttp "GET /static/js/notifications.js HTTP/1.1" 200 2771
+INFO 2025-05-26 16:00:54,455 basehttp "GET /static/webs/plugins/datatables-responsive/js/responsive.bootstrap4.min.js HTTP/1.1" 200 3661
+INFO 2025-05-26 16:00:54,522 basehttp "GET /static/webs/plugins/jszip/jszip.min.js HTTP/1.1" 200 95778
+INFO 2025-05-26 16:00:54,394 basehttp "GET /static/webs/plugins/datatables/jquery.dataTables.min.js HTTP/1.1" 200 87956
+INFO 2025-05-26 16:00:54,470 basehttp "GET /static/webs/plugins/datatables-buttons/js/buttons.html5.min.js HTTP/1.1" 200 25103
+INFO 2025-05-26 16:00:54,491 basehttp "GET /static/webs/plugins/datatables-buttons/js/buttons.bootstrap4.min.js HTTP/1.1" 200 1443
+INFO 2025-05-26 16:00:54,590 basehttp "GET /static/webs/plugins/datatables-buttons/js/buttons.print.min.js HTTP/1.1" 200 2514
+INFO 2025-05-26 16:00:54,560 basehttp "GET /static/webs/plugins/pdfmake/vfs_fonts.js HTTP/1.1" 200 812001
+INFO 2025-05-26 16:00:54,622 basehttp "GET /static/webs/plugins/datatables-buttons/js/dataTables.buttons.min.js HTTP/1.1" 200 25183
+INFO 2025-05-26 16:00:54,627 basehttp "GET /static/webs/plugins/datatables-buttons/js/buttons.colVis.min.js HTTP/1.1" 200 3198
+INFO 2025-05-26 16:00:58,715 basehttp "GET /attendance/history/teacher/1/ HTTP/1.1" 200 24291
+INFO 2025-05-26 16:01:04,852 basehttp "GET /attendance/history/teacher/1/?date=2025-05-23 HTTP/1.1" 200 17649
+INFO 2025-05-26 16:02:39,845 basehttp "GET /attendance/history/?date=2025-05-23 HTTP/1.1" 200 18792
+INFO 2025-05-26 16:02:49,104 basehttp "GET /attendance/history/teacher/1/?date=2025-05-23 HTTP/1.1" 200 18737
+INFO 2025-05-26 16:03:12,809 basehttp "GET /attendance/history/teacher/1/ HTTP/1.1" 200 24291
+INFO 2025-05-26 16:03:16,326 basehttp "GET /teacher/dashboard/ HTTP/1.1" 200 29756
+INFO 2025-05-26 16:24:17,725 autoreload C:\Users\dokdo\ams_cnn\scheduling\views.py changed, reloading.
+INFO 2025-05-26 16:24:25,794 autoreload Watching for file changes with StatReloader
+INFO 2025-05-26 16:30:39,555 autoreload C:\Users\dokdo\ams_cnn\scheduling\views.py changed, reloading.
+INFO 2025-05-26 16:30:45,044 autoreload Watching for file changes with StatReloader
+INFO 2025-05-26 16:32:42,095 autoreload C:\Users\dokdo\ams_cnn\scheduling\views.py changed, reloading.
+INFO 2025-05-26 16:32:45,628 autoreload Watching for file changes with StatReloader
+INFO 2025-05-26 16:33:10,095 autoreload C:\Users\dokdo\ams_cnn\classroom_scheduling\settings.py changed, reloading.
+INFO 2025-05-26 16:33:13,651 autoreload Watching for file changes with StatReloader
+INFO 2025-05-26 16:37:03,223 autoreload C:\Users\dokdo\ams_cnn\classroom_scheduling\settings.py changed, reloading.
+INFO 2025-05-26 16:37:08,632 autoreload Watching for file changes with StatReloader
+INFO 2025-05-26 16:37:37,415 basehttp "GET /teacher/dashboard/ HTTP/1.1" 200 29756
+INFO 2025-05-26 16:44:37,590 autoreload C:\Users\dokdo\ams_cnn\classroom_scheduling\settings.py changed, reloading.
+INFO 2025-05-26 16:44:44,369 autoreload Watching for file changes with StatReloader
+INFO 2025-05-26 16:52:28,903 autoreload C:\Users\dokdo\ams_cnn\classroom_scheduling\settings.py changed, reloading.
+INFO 2025-05-26 16:52:38,591 autoreload Watching for file changes with StatReloader
+INFO 2025-05-26 16:53:59,831 basehttp "GET /attendance/history/teacher/1/?date=2025-05-23 HTTP/1.1" 200 18737
+INFO 2025-05-26 16:54:00,373 basehttp "GET /static/css/bootstrap.min.css HTTP/1.1" 200 194900
+INFO 2025-05-26 16:54:00,372 basehttp "GET /static/webs/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css HTTP/1.1" 200 7496
+INFO 2025-05-26 16:54:00,380 basehttp "GET /static/webs/plugins/datatables-responsive/css/responsive.bootstrap4.min.css HTTP/1.1" 200 4301
+INFO 2025-05-26 16:54:00,412 basehttp "GET /static/js/notifications.js HTTP/1.1" 200 2771
+INFO 2025-05-26 16:54:00,464 basehttp "GET /static/webs/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js HTTP/1.1" 200 4520
+INFO 2025-05-26 16:54:00,482 basehttp "GET /static/webs/plugins/jquery-ui/jquery-ui.min.js HTTP/1.1" 200 254921
+INFO 2025-05-26 16:54:00,503 basehttp "GET /static/webs/plugins/jquery/jquery.min.js HTTP/1.1" 200 89501
+INFO 2025-05-26 16:54:00,500 basehttp "GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 200 80420
+INFO 2025-05-26 16:54:00,479 basehttp "GET /static/webs/plugins/datatables-buttons/css/buttons.bootstrap4.min.css HTTP/1.1" 200 9000
+INFO 2025-05-26 16:54:00,512 basehttp "GET /static/webs/plugins/datatables/jquery.dataTables.min.js HTTP/1.1" 200 87956
+INFO 2025-05-26 16:54:00,582 basehttp "GET /static/webs/plugins/datatables-responsive/js/responsive.bootstrap4.min.js HTTP/1.1" 200 3661
+INFO 2025-05-26 16:54:00,600 basehttp "GET /static/webs/plugins/datatables-buttons/js/buttons.bootstrap4.min.js HTTP/1.1" 200 1443
+INFO 2025-05-26 16:54:00,631 basehttp "GET /static/webs/plugins/jszip/jszip.min.js HTTP/1.1" 200 95778
+INFO 2025-05-26 16:54:00,572 basehttp "GET /static/webs/plugins/datatables-responsive/js/dataTables.responsive.min.js HTTP/1.1" 200 16849
+INFO 2025-05-26 16:54:00,683 basehttp "GET /static/webs/plugins/datatables-buttons/js/buttons.html5.min.js HTTP/1.1" 200 25103
+INFO 2025-05-26 16:54:00,596 basehttp "GET /static/webs/plugins/datatables-buttons/js/dataTables.buttons.min.js HTTP/1.1" 200 25183
+INFO 2025-05-26 16:54:00,700 basehttp "GET /static/webs/plugins/datatables-buttons/js/buttons.colVis.min.js HTTP/1.1" 200 3198
+INFO 2025-05-26 16:54:00,733 basehttp "GET /static/webs/plugins/datatables-buttons/js/buttons.print.min.js HTTP/1.1" 200 2514
+INFO 2025-05-26 16:54:00,962 basehttp "GET /static/webs/plugins/pdfmake/vfs_fonts.js HTTP/1.1" 200 812001
+INFO 2025-05-26 16:54:00,967 basehttp "GET /static/webs/plugins/pdfmake/pdfmake.min.js HTTP/1.1" 200 1348857
+INFO 2025-05-26 16:54:15,828 basehttp "GET /schedules/ HTTP/1.1" 200 21019
+INFO 2025-05-26 16:54:18,048 basehttp "GET /teacher/dashboard/ HTTP/1.1" 200 29756
+INFO 2025-05-26 16:54:40,828 basehttp "GET /subjects/2/ HTTP/1.1" 200 18141
+INFO 2025-05-26 16:54:47,319 basehttp "GET /schedules/2/edit/ HTTP/1.1" 200 20573
+INFO 2025-05-26 16:55:32,260 basehttp "POST /schedules/2/edit/ HTTP/1.1" 302 0
+INFO 2025-05-26 16:55:32,344 basehttp "GET /schedules/ HTTP/1.1" 200 22110
+INFO 2025-05-26 16:55:34,543 basehttp "GET /teacher/dashboard/ HTTP/1.1" 200 29756
+WARNING 2025-05-26 16:55:39,114 deprecation From C:\Users\dokdo\anaconda3\envs\sjitcnn\lib\site-packages\tensorflow\python\util\dispatch.py:1176: calling reduce_max_v1 (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+WARNING 2025-05-26 16:55:39,129 deprecation From C:\Users\dokdo\anaconda3\envs\sjitcnn\lib\site-packages\tensorflow\python\util\dispatch.py:1176: calling reduce_sum_v1 (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+WARNING 2025-05-26 16:55:39,135 deprecation From C:\Users\dokdo\anaconda3\envs\sjitcnn\lib\site-packages\tensorflow\python\util\dispatch.py:1176: div (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Deprecated in favor of operator or tf.math.divide.
+WARNING 2025-05-26 16:55:43,072 deprecation From C:\Users\dokdo\ams_cnn\scheduling\facenet.py:378: FastGFile.__init__ (from tensorflow.python.platform.gfile) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.gfile.GFile.
+ERROR 2025-05-26 16:55:51,259 basehttp "GET /video_feed/2/ HTTP/1.1" 500 59
+INFO 2025-05-26 16:56:11,563 basehttp "GET /stop-stream/2/ HTTP/1.1" 200 21
+INFO 2025-05-26 16:56:11,572 basehttp "GET /stop-stream/2/ HTTP/1.1" 200 21
+INFO 2025-05-26 17:01:36,699 basehttp "GET /schedules/ HTTP/1.1" 200 21019
+INFO 2025-05-26 17:01:38,240 basehttp "GET /users/ HTTP/1.1" 200 21959
+INFO 2025-05-26 17:01:41,358 basehttp "GET /students/ HTTP/1.1" 200 20894
+INFO 2025-05-26 17:01:43,990 basehttp "GET /users/ HTTP/1.1" 200 21959
+INFO 2025-05-26 17:03:09,886 basehttp "GET /users/data_preprocess/ HTTP/1.1" 302 0
+INFO 2025-05-26 17:03:09,966 basehttp "GET /users/ HTTP/1.1" 200 23106
+INFO 2025-05-26 17:04:42,732 basehttp "GET /users/train_cnn/ HTTP/1.1" 302 0
+INFO 2025-05-26 17:04:42,988 basehttp "GET /users/ HTTP/1.1" 200 23050
+INFO 2025-05-26 17:05:13,406 basehttp "GET /teacher/dashboard/ HTTP/1.1" 200 29756
+INFO 2025-05-26 17:05:17,157 basehttp "GET /schedules/ HTTP/1.1" 200 21019
+INFO 2025-05-26 17:05:24,093 basehttp "GET /schedules/2/edit/ HTTP/1.1" 200 20573
+INFO 2025-05-26 17:05:30,169 basehttp "POST /schedules/2/edit/ HTTP/1.1" 302 0
+INFO 2025-05-26 17:05:30,256 basehttp "GET /schedules/ HTTP/1.1" 200 22110
+INFO 2025-05-26 17:05:36,529 basehttp "GET /teacher/dashboard/ HTTP/1.1" 200 29756
+INFO 2025-05-26 17:12:38,536 basehttp "GET /stop-stream/2/ HTTP/1.1" 200 21
+INFO 2025-05-26 17:12:38,563 basehttp "GET /stop-stream/2/ HTTP/1.1" 200 21
+INFO 2025-05-26 17:13:08,266 basehttp "GET /teacher/dashboard/ HTTP/1.1" 200 29756
+INFO 2025-05-26 17:14:29,684 basehttp "GET /teacher/dashboard/ HTTP/1.1" 200 29756
+INFO 2025-05-26 17:16:25,246 basehttp "GET /stop-stream/2/ HTTP/1.1" 200 21
+INFO 2025-05-26 17:16:25,274 basehttp "GET /stop-stream/2/ HTTP/1.1" 200 21
+INFO 2025-05-26 17:16:27,293 basehttp "GET /teacher/dashboard/ HTTP/1.1" 200 29756
+INFO 2025-05-26 17:17:16,739 autoreload C:\Users\dokdo\ams_cnn\classroom_scheduling\settings.py changed, reloading.
+INFO 2025-05-26 17:17:25,555 autoreload Watching for file changes with StatReloader
+INFO 2025-05-26 17:17:46,787 basehttp "GET /schedules/ HTTP/1.1" 200 21019
+INFO 2025-05-26 17:17:46,927 basehttp "GET /static/css/bootstrap.min.css HTTP/1.1" 200 194900
+INFO 2025-05-26 17:17:46,952 basehttp "GET /static/webs/plugins/jquery/jquery.min.js HTTP/1.1" 200 89501
+INFO 2025-05-26 17:17:46,948 basehttp "GET /static/js/notifications.js HTTP/1.1" 200 2771
+INFO 2025-05-26 17:17:46,994 basehttp "GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 200 80420
+INFO 2025-05-26 17:17:47,093 basehttp "GET /static/webs/plugins/datatables-responsive/css/responsive.bootstrap4.min.css HTTP/1.1" 200 4301
+INFO 2025-05-26 17:17:47,263 basehttp "GET /static/webs/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css HTTP/1.1" 200 7496
+INFO 2025-05-26 17:17:47,303 basehttp "GET /static/webs/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js HTTP/1.1" 200 4520
+INFO 2025-05-26 17:17:47,322 basehttp "GET /static/webs/plugins/datatables-buttons/js/buttons.bootstrap4.min.js HTTP/1.1" 200 1443
+INFO 2025-05-26 17:17:47,103 basehttp "GET /static/webs/plugins/datatables/jquery.dataTables.min.js HTTP/1.1" 200 87956
+INFO 2025-05-26 17:17:47,355 basehttp "GET /static/webs/plugins/jszip/jszip.min.js HTTP/1.1" 200 95778
+INFO 2025-05-26 17:17:47,049 basehttp "GET /static/webs/plugins/datatables-buttons/css/buttons.bootstrap4.min.css HTTP/1.1" 200 9000
+INFO 2025-05-26 17:17:47,653 basehttp "GET /static/webs/plugins/datatables-buttons/js/dataTables.buttons.min.js HTTP/1.1" 200 25183
+INFO 2025-05-26 17:17:47,446 basehttp "GET /static/webs/plugins/jquery-ui/jquery-ui.min.js HTTP/1.1" 200 254921
+INFO 2025-05-26 17:17:47,645 basehttp "GET /static/webs/plugins/pdfmake/pdfmake.min.js HTTP/1.1" 200 1348857
+INFO 2025-05-26 17:17:47,720 basehttp "GET /static/webs/plugins/datatables-responsive/js/dataTables.responsive.min.js HTTP/1.1" 200 16849
+INFO 2025-05-26 17:17:47,377 basehttp "GET /static/webs/plugins/datatables-responsive/js/responsive.bootstrap4.min.js HTTP/1.1" 200 3661
+INFO 2025-05-26 17:17:47,801 basehttp "GET /static/webs/plugins/datatables-buttons/js/buttons.print.min.js HTTP/1.1" 200 2514
+INFO 2025-05-26 17:17:47,782 basehttp "GET /static/webs/plugins/datatables-buttons/js/buttons.colVis.min.js HTTP/1.1" 200 3198
+INFO 2025-05-26 17:17:47,899 basehttp "GET /static/webs/plugins/datatables-buttons/js/buttons.html5.min.js HTTP/1.1" 200 25103
+INFO 2025-05-26 17:17:47,911 basehttp "GET /static/webs/plugins/pdfmake/vfs_fonts.js HTTP/1.1" 200 812001
+INFO 2025-05-26 17:17:49,577 basehttp "GET /teacher/dashboard/ HTTP/1.1" 200 29756
+WARNING 2025-05-26 17:17:53,928 deprecation From C:\Users\dokdo\anaconda3\envs\sjitcnn\lib\site-packages\tensorflow\python\util\dispatch.py:1176: calling reduce_max_v1 (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+WARNING 2025-05-26 17:17:53,935 deprecation From C:\Users\dokdo\anaconda3\envs\sjitcnn\lib\site-packages\tensorflow\python\util\dispatch.py:1176: calling reduce_sum_v1 (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+WARNING 2025-05-26 17:17:53,940 deprecation From C:\Users\dokdo\anaconda3\envs\sjitcnn\lib\site-packages\tensorflow\python\util\dispatch.py:1176: div (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Deprecated in favor of operator or tf.math.divide.
+WARNING 2025-05-26 17:17:57,900 deprecation From C:\Users\dokdo\ams_cnn\scheduling\facenet.py:378: FastGFile.__init__ (from tensorflow.python.platform.gfile) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.gfile.GFile.
+INFO 2025-05-26 17:20:17,233 basehttp "GET /stop-stream/2/ HTTP/1.1" 200 21
+INFO 2025-05-26 17:20:17,346 basehttp "GET /stop-stream/2/ HTTP/1.1" 200 21
+INFO 2025-05-26 17:22:51,793 autoreload C:\Users\dokdo\ams_cnn\classroom_scheduling\settings.py changed, reloading.
+INFO 2025-05-26 17:24:04,070 autoreload Watching for file changes with StatReloader
+INFO 2025-05-26 17:24:45,671 basehttp "GET /teacher/dashboard/ HTTP/1.1" 200 29756
+WARNING 2025-05-26 17:24:47,561 deprecation From C:\Users\dokdo\anaconda3\envs\sjitcnn\lib\site-packages\tensorflow\python\util\dispatch.py:1176: calling reduce_max_v1 (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+WARNING 2025-05-26 17:24:47,577 deprecation From C:\Users\dokdo\anaconda3\envs\sjitcnn\lib\site-packages\tensorflow\python\util\dispatch.py:1176: calling reduce_sum_v1 (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+WARNING 2025-05-26 17:24:47,577 deprecation From C:\Users\dokdo\anaconda3\envs\sjitcnn\lib\site-packages\tensorflow\python\util\dispatch.py:1176: div (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Deprecated in favor of operator or tf.math.divide.
+WARNING 2025-05-26 17:24:51,813 deprecation From C:\Users\dokdo\ams_cnn\scheduling\facenet.py:378: FastGFile.__init__ (from tensorflow.python.platform.gfile) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.gfile.GFile.
+INFO 2025-05-26 17:26:59,731 basehttp "GET /stop-stream/2/ HTTP/1.1" 200 21
+INFO 2025-05-26 17:26:59,749 basehttp "GET /stop-stream/2/ HTTP/1.1" 200 21
+INFO 2025-05-26 17:27:28,636 basehttp "GET /teacher/dashboard/ HTTP/1.1" 200 29756
+INFO 2025-05-27 12:59:23,513 basehttp "GET /teacher/dashboard/ HTTP/1.1" 200 29525
+INFO 2025-05-27 12:59:23,720 basehttp "GET /static/css/bootstrap.min.css HTTP/1.1" 304 0
+INFO 2025-05-27 12:59:23,726 basehttp "GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 304 0
+INFO 2026-02-09 01:23:07,760 autoreload Watching for file changes with StatReloader
+INFO 2026-02-09 01:23:42,361 basehttp "GET / HTTP/1.1" 302 0
+INFO 2026-02-09 01:23:43,485 basehttp "GET /login/?next=/ HTTP/1.1" 200 7738
+WARNING 2026-02-09 01:23:46,134 log Not Found: /favicon.ico
+WARNING 2026-02-09 01:23:46,139 basehttp "GET /favicon.ico HTTP/1.1" 404 13542
+INFO 2026-02-09 01:24:53,745 authentication Authentication attempt for: superadmin
+INFO 2026-02-09 01:24:53,745 authentication Authentication attempt for: superadmin
+INFO 2026-02-09 01:24:54,536 authentication No student found with ID: superadmin
+INFO 2026-02-09 01:24:54,536 authentication No student found with ID: superadmin
+INFO 2026-02-09 01:24:54,546 basehttp "POST /login/ HTTP/1.1" 200 7997
+INFO 2026-02-09 01:25:02,729 authentication Authentication attempt for: superadmin
+INFO 2026-02-09 01:25:02,729 authentication Authentication attempt for: superadmin
+INFO 2026-02-09 01:25:03,544 authentication No student found with ID: superadmin
+INFO 2026-02-09 01:25:03,544 authentication No student found with ID: superadmin
+INFO 2026-02-09 01:25:03,544 basehttp "POST /login/ HTTP/1.1" 200 7997
+INFO 2026-02-09 01:25:12,967 authentication Authentication attempt for: superadmin
+INFO 2026-02-09 01:25:12,967 authentication Authentication attempt for: superadmin
+INFO 2026-02-09 01:25:13,821 authentication No student found with ID: superadmin
+INFO 2026-02-09 01:25:13,821 authentication No student found with ID: superadmin
+INFO 2026-02-09 01:25:13,827 basehttp "POST /login/ HTTP/1.1" 200 7997
+INFO 2026-02-09 01:25:38,173 authentication Authentication attempt for: superadmin
+INFO 2026-02-09 01:25:38,173 authentication Authentication attempt for: superadmin
+INFO 2026-02-09 01:25:39,016 authentication No student found with ID: superadmin
+INFO 2026-02-09 01:25:39,016 authentication No student found with ID: superadmin
+INFO 2026-02-09 01:25:39,024 basehttp "POST /login/ HTTP/1.1" 200 7997
+INFO 2026-02-09 01:27:03,463 basehttp "POST /login/ HTTP/1.1" 302 0
+INFO 2026-02-09 01:27:03,516 basehttp "GET / HTTP/1.1" 302 0
+INFO 2026-02-09 01:27:04,497 basehttp "GET /dashboard/ HTTP/1.1" 200 20331
+INFO 2026-02-09 01:27:04,780 basehttp "GET /static/webs/plugins/datatables-buttons/css/buttons.bootstrap4.min.css HTTP/1.1" 200 9000
+INFO 2026-02-09 01:27:04,865 basehttp "GET /static/webs/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css HTTP/1.1" 200 7496
+INFO 2026-02-09 01:27:04,940 basehttp "GET /static/webs/plugins/datatables-responsive/css/responsive.bootstrap4.min.css HTTP/1.1" 200 4301
+INFO 2026-02-09 01:27:05,008 basehttp "GET /static/js/notifications.js HTTP/1.1" 200 2771
+INFO 2026-02-09 01:27:05,056 basehttp "GET /static/css/bootstrap.min.css HTTP/1.1" 200 194900
+INFO 2026-02-09 01:27:05,093 basehttp "GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 200 80420
+INFO 2026-02-09 01:27:05,267 basehttp "GET /static/webs/plugins/jquery/jquery.min.js HTTP/1.1" 200 89501
+INFO 2026-02-09 01:27:05,277 basehttp "GET /static/webs/plugins/datatables-responsive/js/dataTables.responsive.min.js HTTP/1.1" 200 16849
+INFO 2026-02-09 01:27:05,402 basehttp "GET /static/webs/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js HTTP/1.1" 200 4520
+INFO 2026-02-09 01:27:05,436 basehttp "GET /static/webs/plugins/datatables/jquery.dataTables.min.js HTTP/1.1" 200 87956
+INFO 2026-02-09 01:27:05,640 basehttp "GET /static/webs/plugins/jquery-ui/jquery-ui.min.js HTTP/1.1" 200 254921
+INFO 2026-02-09 01:27:06,128 basehttp "GET /static/webs/plugins/datatables-buttons/js/buttons.bootstrap4.min.js HTTP/1.1" 200 1443
+INFO 2026-02-09 01:27:06,132 basehttp "GET /static/webs/plugins/datatables-responsive/js/responsive.bootstrap4.min.js HTTP/1.1" 200 3661
+INFO 2026-02-09 01:27:06,253 basehttp "GET /static/webs/plugins/jszip/jszip.min.js HTTP/1.1" 200 95778
+INFO 2026-02-09 01:27:06,371 basehttp "GET /static/webs/plugins/datatables-buttons/js/buttons.colVis.min.js HTTP/1.1" 200 3198
+INFO 2026-02-09 01:27:06,526 basehttp "GET /static/webs/plugins/datatables-buttons/js/buttons.print.min.js HTTP/1.1" 200 2514
+INFO 2026-02-09 01:27:06,565 basehttp "GET /static/webs/plugins/pdfmake/vfs_fonts.js HTTP/1.1" 200 812001
+INFO 2026-02-09 01:27:06,610 basehttp "GET /static/webs/plugins/datatables-buttons/js/dataTables.buttons.min.js HTTP/1.1" 200 25183
+INFO 2026-02-09 01:27:06,765 basehttp "GET /static/webs/plugins/datatables-buttons/js/buttons.html5.min.js HTTP/1.1" 200 25103
+INFO 2026-02-09 01:27:07,291 basehttp "GET /static/webs/plugins/pdfmake/pdfmake.min.js HTTP/1.1" 200 1348857
+INFO 2026-02-09 01:27:10,957 basehttp "GET /logout/ HTTP/1.1" 302 0
+INFO 2026-02-09 01:27:10,981 basehttp "GET /login/ HTTP/1.1" 200 7738
+INFO 2026-02-09 02:25:08,718 basehttp "POST /login/ HTTP/1.1" 302 0
+INFO 2026-02-09 02:25:08,765 basehttp "GET / HTTP/1.1" 302 0
+INFO 2026-02-09 02:25:09,405 basehttp "GET /system/dashboard/ HTTP/1.1" 200 20610
+INFO 2026-02-09 02:25:09,515 basehttp "GET /static/css/bootstrap.min.css HTTP/1.1" 200 194900
+INFO 2026-02-09 02:25:09,547 basehttp "GET /static/webs/plugins/datatables-responsive/css/responsive.bootstrap4.min.css HTTP/1.1" 200 4301
+INFO 2026-02-09 02:25:09,547 basehttp "GET /static/webs/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css HTTP/1.1" 200 7496
+INFO 2026-02-09 02:25:09,570 basehttp "GET /static/webs/plugins/datatables-buttons/css/buttons.bootstrap4.min.css HTTP/1.1" 200 9000
+INFO 2026-02-09 02:25:09,582 basehttp "GET /static/js/notifications.js HTTP/1.1" 200 2771
+INFO 2026-02-09 02:25:09,598 basehttp "GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 200 80420
+INFO 2026-02-09 02:25:09,599 basehttp "GET /static/webs/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js HTTP/1.1" 200 4520
+INFO 2026-02-09 02:25:09,606 basehttp "GET /static/webs/plugins/datatables/jquery.dataTables.min.js HTTP/1.1" 200 87956
+INFO 2026-02-09 02:25:09,605 basehttp "GET /static/webs/plugins/jquery/jquery.min.js HTTP/1.1" 200 89501
+INFO 2026-02-09 02:25:09,634 basehttp "GET /static/webs/plugins/datatables-responsive/js/responsive.bootstrap4.min.js HTTP/1.1" 200 3661
+INFO 2026-02-09 02:25:09,631 basehttp "GET /static/webs/plugins/jquery-ui/jquery-ui.min.js HTTP/1.1" 200 254921
+INFO 2026-02-09 02:25:09,654 basehttp "GET /static/webs/plugins/datatables-responsive/js/dataTables.responsive.min.js HTTP/1.1" 200 16849
+INFO 2026-02-09 02:25:09,661 basehttp "GET /static/webs/plugins/jszip/jszip.min.js HTTP/1.1" 200 95778
+INFO 2026-02-09 02:25:09,713 basehttp "GET /static/webs/plugins/datatables-buttons/js/dataTables.buttons.min.js HTTP/1.1" 200 25183
+INFO 2026-02-09 02:25:09,663 basehttp "GET /static/webs/plugins/datatables-buttons/js/buttons.bootstrap4.min.js HTTP/1.1" 200 1443
+INFO 2026-02-09 02:25:09,751 basehttp "GET /static/webs/plugins/datatables-buttons/js/buttons.print.min.js HTTP/1.1" 200 2514
+INFO 2026-02-09 02:25:09,757 basehttp "GET /static/webs/plugins/datatables-buttons/js/buttons.colVis.min.js HTTP/1.1" 200 3198
+INFO 2026-02-09 02:25:09,754 basehttp "GET /static/webs/plugins/datatables-buttons/js/buttons.html5.min.js HTTP/1.1" 200 25103
+INFO 2026-02-09 02:25:09,797 basehttp "GET /static/webs/plugins/pdfmake/vfs_fonts.js HTTP/1.1" 200 812001
+INFO 2026-02-09 02:25:09,840 basehttp "GET /static/webs/plugins/pdfmake/pdfmake.min.js HTTP/1.1" 200 1348857
+INFO 2026-02-09 02:25:14,346 basehttp "GET /password_change/ HTTP/1.1" 200 19171
+INFO 2026-02-09 02:25:22,442 basehttp "GET /admin HTTP/1.1" 301 0
+INFO 2026-02-09 02:25:22,634 basehttp "GET /admin/ HTTP/1.1" 200 8500
+INFO 2026-02-09 02:25:22,790 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 200 18559
+INFO 2026-02-09 02:25:22,786 basehttp "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+INFO 2026-02-09 02:25:22,795 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2694
+INFO 2026-02-09 02:25:22,796 basehttp "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2929
+INFO 2026-02-09 02:25:22,800 basehttp "GET /static/admin/css/base.css HTTP/1.1" 200 21310
+INFO 2026-02-09 02:25:22,821 basehttp "GET /static/admin/js/theme.js HTTP/1.1" 200 1943
+INFO 2026-02-09 02:25:22,821 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+INFO 2026-02-09 02:25:22,835 basehttp "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+INFO 2026-02-09 02:25:22,832 basehttp "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+INFO 2026-02-09 02:25:25,606 basehttp "GET /admin/scheduling/user/ HTTP/1.1" 200 14187
+INFO 2026-02-09 02:25:25,728 basehttp "GET /static/admin/css/changelists.css HTTP/1.1" 200 6566
+INFO 2026-02-09 02:25:25,755 basehttp "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2026-02-09 02:25:25,796 basehttp "GET /static/admin/js/actions.js HTTP/1.1" 200 7872
+INFO 2026-02-09 02:25:25,807 basehttp "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO 2026-02-09 02:25:25,816 basehttp "GET /static/admin/js/core.js HTTP/1.1" 200 5682
+INFO 2026-02-09 02:25:25,834 basehttp "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 8943
+INFO 2026-02-09 02:25:25,842 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2026-02-09 02:25:25,871 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 292458
+INFO 2026-02-09 02:25:25,879 basehttp "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2026-02-09 02:25:25,904 basehttp "GET /static/admin/img/icon-no.svg HTTP/1.1" 200 560
+INFO 2026-02-09 02:25:25,910 basehttp "GET /static/admin/img/search.svg HTTP/1.1" 200 458
+INFO 2026-02-09 02:25:25,918 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+INFO 2026-02-09 02:25:26,278 basehttp "GET /static/admin/js/filters.js HTTP/1.1" 200 978
+INFO 2026-02-09 02:25:26,282 basehttp "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+INFO 2026-02-09 02:25:26,339 basehttp "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+INFO 2026-02-09 02:25:26,340 basehttp "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1097
+INFO 2026-02-09 02:25:29,769 basehttp "GET /admin/scheduling/user/1/change/ HTTP/1.1" 200 23862
+INFO 2026-02-09 02:25:29,886 basehttp "GET /static/admin/js/SelectFilter2.js HTTP/1.1" 200 15292
+INFO 2026-02-09 02:25:29,898 basehttp "GET /static/admin/css/forms.css HTTP/1.1" 200 9090
+INFO 2026-02-09 02:25:29,892 basehttp "GET /static/admin/js/calendar.js HTTP/1.1" 200 8466
+INFO 2026-02-09 02:25:29,890 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2026-02-09 02:25:29,900 basehttp "GET /static/admin/js/SelectBox.js HTTP/1.1" 200 4530
+INFO 2026-02-09 02:25:29,902 basehttp "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 19319
+INFO 2026-02-09 02:25:29,913 basehttp "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+INFO 2026-02-09 02:25:29,919 basehttp "GET /static/admin/css/widgets.css HTTP/1.1" 200 11921
+INFO 2026-02-09 02:25:30,285 basehttp "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+INFO 2026-02-09 02:25:30,528 basehttp "GET /static/admin/img/selector-icons.svg HTTP/1.1" 200 3291
+INFO 2026-02-09 02:25:30,531 basehttp "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 200 1086
+INFO 2026-02-09 02:25:30,534 basehttp "GET /static/admin/img/icon-clock.svg HTTP/1.1" 200 677
+INFO 2026-02-09 02:25:30,530 basehttp "GET /static/admin/img/icon-unknown.svg HTTP/1.1" 200 655
+INFO 2026-02-09 02:25:30,536 basehttp "GET /static/admin/img/icon-unknown-alt.svg HTTP/1.1" 200 655
+INFO 2026-02-09 02:25:38,532 basehttp "GET /admin/scheduling/user/1/password/ HTTP/1.1" 200 9269
+INFO 2026-02-09 02:26:02,335 basehttp "POST /admin/scheduling/user/1/password/ HTTP/1.1" 302 0
+INFO 2026-02-09 02:26:02,404 basehttp "GET /admin/scheduling/user/1/change/ HTTP/1.1" 200 23998
+INFO 2026-02-09 02:26:02,473 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2026-02-09 02:26:06,542 basehttp "POST /admin/logout/ HTTP/1.1" 302 0
+INFO 2026-02-09 02:26:06,561 basehttp "GET /login/ HTTP/1.1" 200 7738
+INFO 2026-02-09 02:26:16,126 basehttp "POST /login/ HTTP/1.1" 302 0
+INFO 2026-02-09 02:26:16,163 basehttp "GET / HTTP/1.1" 302 0
+INFO 2026-02-09 02:26:16,232 basehttp "GET /system/dashboard/ HTTP/1.1" 200 19511
+INFO 2026-02-09 02:28:31,850 basehttp "GET /schedules/ HTTP/1.1" 200 21019
+INFO 2026-02-09 02:28:36,828 basehttp "GET /classrooms/ HTTP/1.1" 200 21930
+INFO 2026-02-09 02:28:41,876 basehttp "GET /subjects/ HTTP/1.1" 200 21957
+INFO 2026-02-09 02:28:47,869 basehttp "GET /teachers/ HTTP/1.1" 200 16567
+INFO 2026-02-09 02:28:51,021 basehttp "GET /students/ HTTP/1.1" 200 20894
+INFO 2026-02-09 02:28:54,174 basehttp "GET /users/ HTTP/1.1" 200 21959
+INFO 2026-02-09 02:28:57,391 basehttp "GET /attendance/history/ HTTP/1.1" 200 16091
+INFO 2026-02-09 02:29:03,202 basehttp "GET /schedules/ HTTP/1.1" 200 21019
+INFO 2026-02-09 02:29:04,600 basehttp "GET /schedules/1/ HTTP/1.1" 200 17725
+INFO 2026-02-09 02:29:13,294 basehttp "GET /schedules/ HTTP/1.1" 200 21019
+INFO 2026-02-09 02:29:14,915 basehttp "GET /schedules/1/edit/ HTTP/1.1" 200 20566
+INFO 2026-02-09 02:29:18,986 basehttp "GET /schedules/ HTTP/1.1" 200 21019
+INFO 2026-02-09 02:29:22,896 basehttp "GET /schedules/new/ HTTP/1.1" 200 20509
+INFO 2026-02-09 02:29:34,754 basehttp "GET /schedules/ HTTP/1.1" 200 21019
+INFO 2026-02-09 02:29:42,920 basehttp "GET /schedules/1/edit/ HTTP/1.1" 200 20566
+INFO 2026-02-09 02:29:46,481 basehttp "GET /schedules/ HTTP/1.1" 200 21019
+INFO 2026-02-09 02:30:04,529 basehttp "GET /subjects/ HTTP/1.1" 200 21957
+INFO 2026-02-09 02:30:05,915 basehttp "GET /teachers/ HTTP/1.1" 200 16567
+INFO 2026-02-09 02:30:07,333 basehttp "GET /students/ HTTP/1.1" 200 20894
+INFO 2026-02-09 02:38:09,524 basehttp "GET /teachers/ HTTP/1.1" 200 16567
+INFO 2026-02-09 02:38:11,846 basehttp "GET /teachers/1/ HTTP/1.1" 200 25099
+INFO 2026-02-09 02:38:24,875 basehttp "GET /subjects/ HTTP/1.1" 200 21957
+INFO 2026-02-09 02:38:54,707 basehttp "GET /subjects/2/ HTTP/1.1" 200 22307
+INFO 2026-02-09 02:38:58,038 basehttp "GET /classrooms/ HTTP/1.1" 200 21930
+INFO 2026-02-09 02:39:00,426 basehttp "GET /classrooms/1/ HTTP/1.1" 200 17126
+INFO 2026-02-09 02:39:07,600 basehttp "GET /classrooms/ HTTP/1.1" 200 21930
+INFO 2026-02-09 02:39:18,270 basehttp "POST /classrooms/1/toggle-status/ HTTP/1.1" 302 0
+INFO 2026-02-09 02:39:18,316 basehttp "GET /classrooms/ HTTP/1.1" 200 23041
+INFO 2026-02-09 02:39:24,471 basehttp "POST /classrooms/1/toggle-status/ HTTP/1.1" 302 0
+INFO 2026-02-09 02:39:24,514 basehttp "GET /classrooms/ HTTP/1.1" 200 23037
+INFO 2026-02-09 02:39:27,833 basehttp "POST /classrooms/1/toggle-status/ HTTP/1.1" 302 0
+INFO 2026-02-09 02:39:27,860 basehttp "GET /classrooms/ HTTP/1.1" 200 23041
+INFO 2026-02-09 02:39:31,526 basehttp "GET /classrooms/ HTTP/1.1" 200 21932
+INFO 2026-02-09 02:41:10,584 basehttp "GET /schedules/ HTTP/1.1" 200 21019
+INFO 2026-02-09 02:41:12,434 basehttp "GET /schedules/ HTTP/1.1" 200 21019
+INFO 2026-02-09 02:42:18,890 basehttp "GET /attendance/history/ HTTP/1.1" 200 16091
+INFO 2026-02-09 02:42:21,260 basehttp "GET /users/ HTTP/1.1" 200 21959
+INFO 2026-02-09 02:46:35,248 basehttp "GET /classrooms/ HTTP/1.1" 200 21932
+INFO 2026-02-09 02:46:37,580 basehttp "GET /schedules/ HTTP/1.1" 200 21019
+INFO 2026-02-09 02:46:42,188 basehttp "GET /classrooms/ HTTP/1.1" 200 21932
+INFO 2026-02-09 02:48:14,454 basehttp "GET /classrooms/ HTTP/1.1" 200 21932
+INFO 2026-02-09 02:48:18,196 basehttp "GET /classrooms/1/edit/ HTTP/1.1" 200 16248
+INFO 2026-02-09 02:48:19,854 basehttp "GET /classrooms/ HTTP/1.1" 200 21932
+INFO 2026-02-09 02:48:21,021 basehttp "GET /classrooms/1/ HTTP/1.1" 200 17127
+INFO 2026-02-09 02:48:30,187 basehttp "GET /classrooms/ HTTP/1.1" 200 21932
+INFO 2026-02-09 02:48:31,812 basehttp "GET /classrooms/1/edit/ HTTP/1.1" 200 16248
+INFO 2026-02-09 02:48:36,396 basehttp "GET /classrooms/ HTTP/1.1" 200 21932
+INFO 2026-02-09 02:48:37,853 basehttp "GET /classrooms/1/edit/ HTTP/1.1" 200 16248
+INFO 2026-02-09 02:48:39,312 basehttp "GET /classrooms/ HTTP/1.1" 200 21932
+INFO 2026-02-09 02:48:40,297 basehttp "GET /classrooms/3/edit/ HTTP/1.1" 200 16256
+INFO 2026-02-09 02:48:41,319 basehttp "GET /classrooms/ HTTP/1.1" 200 21932
+INFO 2026-02-09 02:48:43,877 basehttp "GET /classrooms/new/ HTTP/1.1" 200 16228
+INFO 2026-02-09 02:48:47,381 basehttp "GET /classrooms/ HTTP/1.1" 200 21932
+INFO 2026-02-09 02:49:44,925 basehttp "GET /subjects/ HTTP/1.1" 200 21957
+INFO 2026-02-09 02:49:50,780 basehttp "GET /subjects/2/ HTTP/1.1" 200 22307
+INFO 2026-02-09 02:50:12,155 basehttp "GET /subjects/ HTTP/1.1" 200 21957
+INFO 2026-02-09 02:50:14,034 basehttp "GET /subjects/2/edit/ HTTP/1.1" 200 16273
+INFO 2026-02-09 02:50:18,340 basehttp "GET /subjects/ HTTP/1.1" 200 21957
+INFO 2026-02-09 02:50:19,543 basehttp "GET /subjects/new/ HTTP/1.1" 200 16242
+INFO 2026-02-09 02:51:07,630 basehttp "GET /teachers/ HTTP/1.1" 200 16567
+INFO 2026-02-09 02:51:10,531 basehttp "GET /teachers/1/ HTTP/1.1" 200 25099
+INFO 2026-02-09 02:51:20,613 basehttp "GET /students/ HTTP/1.1" 200 20894
+INFO 2026-02-09 02:51:24,151 basehttp "GET /students/1/ HTTP/1.1" 200 22762
+INFO 2026-02-09 02:51:28,488 basehttp "GET /students/ HTTP/1.1" 200 20894
+INFO 2026-02-09 02:51:33,753 basehttp "GET /students/2/face_registration/ HTTP/1.1" 302 0
+INFO 2026-02-09 02:51:33,809 basehttp "GET /students/ HTTP/1.1" 200 20871
+INFO 2026-02-09 02:53:42,323 basehttp "GET /teachers/ HTTP/1.1" 200 16567
+INFO 2026-02-09 02:53:47,849 basehttp "GET /teachers/1/ HTTP/1.1" 200 25099
+INFO 2026-02-09 02:53:59,751 basehttp "GET /subjects/ HTTP/1.1" 200 21957
+INFO 2026-02-09 02:54:01,275 basehttp "GET /subjects/2/ HTTP/1.1" 200 22307
+INFO 2026-02-09 02:54:04,439 basehttp "GET /teachers/ HTTP/1.1" 200 16567
+INFO 2026-02-09 02:54:06,395 basehttp "GET /teachers/1/ HTTP/1.1" 200 25099
+INFO 2026-02-09 02:54:32,820 basehttp "GET /teachers/ HTTP/1.1" 200 16567
+INFO 2026-02-09 02:54:34,743 basehttp "GET /teachers/1/edit/ HTTP/1.1" 200 17162
+INFO 2026-02-09 02:54:44,035 basehttp "GET /teachers/ HTTP/1.1" 200 16567
+INFO 2026-02-09 02:54:46,070 basehttp "GET /teachers/new/ HTTP/1.1" 200 17065
+INFO 2026-02-09 03:00:04,504 basehttp "GET /students/ HTTP/1.1" 200 20894
+INFO 2026-02-09 03:00:37,086 basehttp "GET /students/2/ HTTP/1.1" 200 22755
+INFO 2026-02-09 03:00:48,278 basehttp "GET /students/2/edit/ HTTP/1.1" 200 21998
+INFO 2026-02-09 03:00:52,481 basehttp "GET /students/ HTTP/1.1" 200 20894
+INFO 2026-02-09 03:00:54,229 basehttp "GET /students/2/ HTTP/1.1" 200 22755
+INFO 2026-02-09 03:01:00,236 basehttp "GET /students/2/edit/ HTTP/1.1" 200 21998
+INFO 2026-02-09 03:01:04,686 basehttp "GET /students/ HTTP/1.1" 200 20894
+INFO 2026-02-09 03:01:08,466 basehttp "GET /students/new/ HTTP/1.1" 200 21846
+INFO 2026-02-09 03:03:06,730 basehttp "GET /users/ HTTP/1.1" 200 21959
+INFO 2026-02-09 03:03:09,834 basehttp "GET /users/1/ HTTP/1.1" 200 16956
+INFO 2026-02-09 03:03:17,079 basehttp "GET /users/ HTTP/1.1" 200 21959
+INFO 2026-02-09 03:03:18,516 basehttp "GET /users/1/edit/ HTTP/1.1" 200 17745
+INFO 2026-02-09 03:05:39,911 basehttp "GET /users/1/edit/ HTTP/1.1" 200 17745
+INFO 2026-02-09 03:08:31,043 basehttp "GET /users/1/edit/ HTTP/1.1" 200 17745
+INFO 2026-02-09 03:09:29,098 basehttp "GET /logout/ HTTP/1.1" 302 0
+INFO 2026-02-09 03:09:29,148 basehttp "GET /login/ HTTP/1.1" 200 7738
+INFO 2026-02-09 03:09:45,230 basehttp "POST /login/ HTTP/1.1" 302 0
+INFO 2026-02-09 03:09:45,258 basehttp "GET / HTTP/1.1" 302 0
+INFO 2026-02-09 03:09:45,370 basehttp "GET /system/dashboard/ HTTP/1.1" 200 20610
+INFO 2026-02-09 03:09:48,785 basehttp "GET /password_change/ HTTP/1.1" 200 19171
+INFO 2026-02-09 03:10:50,364 basehttp "GET /logout/ HTTP/1.1" 302 0
+INFO 2026-02-09 03:10:50,382 basehttp "GET /login/ HTTP/1.1" 200 7738
+INFO 2026-02-09 03:12:26,480 basehttp "POST /login/ HTTP/1.1" 302 0
+INFO 2026-02-09 03:12:26,511 basehttp "GET / HTTP/1.1" 302 0
+INFO 2026-02-09 03:12:26,823 basehttp "GET /teacher/dashboard/ HTTP/1.1" 200 30607
+INFO 2026-02-09 03:12:30,334 basehttp "GET /schedules/ HTTP/1.1" 200 18110
+INFO 2026-02-09 03:12:31,625 basehttp "GET /teacher/dashboard/ HTTP/1.1" 200 29508
+INFO 2026-02-09 08:31:47,478 basehttp "GET /teacher/dashboard/ HTTP/1.1" 200 29508
+INFO 2026-02-09 08:31:47,853 basehttp "GET /static/webs/plugins/datatables-responsive/css/responsive.bootstrap4.min.css HTTP/1.1" 200 4301
+INFO 2026-02-09 08:31:47,859 basehttp "GET /static/webs/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css HTTP/1.1" 200 7496
+INFO 2026-02-09 08:31:47,892 basehttp "GET /static/webs/plugins/datatables-buttons/css/buttons.bootstrap4.min.css HTTP/1.1" 200 9000
+INFO 2026-02-09 08:31:47,976 basehttp "GET /static/css/bootstrap.min.css HTTP/1.1" 200 194900
+INFO 2026-02-09 08:31:48,286 basehttp "GET /static/webs/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js HTTP/1.1" 200 4520
+INFO 2026-02-09 08:31:48,324 basehttp "GET /static/webs/plugins/jquery/jquery.min.js HTTP/1.1" 200 89501
+INFO 2026-02-09 08:31:48,332 basehttp "GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 200 80420
+INFO 2026-02-09 08:31:48,391 basehttp "GET /static/webs/plugins/jquery-ui/jquery-ui.min.js HTTP/1.1" 200 254921
+INFO 2026-02-09 08:31:48,209 basehttp "GET /static/js/notifications.js HTTP/1.1" 200 2771
+INFO 2026-02-09 08:31:48,524 basehttp "GET /static/webs/plugins/datatables-buttons/js/buttons.bootstrap4.min.js HTTP/1.1" 200 1443
+INFO 2026-02-09 08:31:48,592 basehttp "GET /static/webs/plugins/datatables-buttons/js/dataTables.buttons.min.js HTTP/1.1" 200 25183
+INFO 2026-02-09 08:31:48,409 basehttp "GET /static/webs/plugins/datatables-responsive/js/responsive.bootstrap4.min.js HTTP/1.1" 200 3661
+INFO 2026-02-09 08:31:48,722 basehttp "GET /static/webs/plugins/jszip/jszip.min.js HTTP/1.1" 200 95778
+INFO 2026-02-09 08:31:49,023 basehttp "GET /static/webs/plugins/datatables-responsive/js/dataTables.responsive.min.js HTTP/1.1" 200 16849
+INFO 2026-02-09 08:31:49,040 basehttp "GET /static/webs/plugins/datatables/jquery.dataTables.min.js HTTP/1.1" 200 87956
+INFO 2026-02-09 08:31:49,138 basehttp "GET /static/webs/plugins/datatables-buttons/js/buttons.print.min.js HTTP/1.1" 200 2514
+INFO 2026-02-09 08:31:49,163 basehttp "GET /static/webs/plugins/pdfmake/vfs_fonts.js HTTP/1.1" 200 812001
+INFO 2026-02-09 08:31:49,225 basehttp "GET /static/webs/plugins/datatables-buttons/js/buttons.colVis.min.js HTTP/1.1" 200 3198
+INFO 2026-02-09 08:31:49,380 basehttp "GET /static/webs/plugins/datatables-buttons/js/buttons.html5.min.js HTTP/1.1" 200 25103
+INFO 2026-02-09 08:31:49,815 basehttp "GET /static/webs/plugins/pdfmake/pdfmake.min.js HTTP/1.1" 200 1348857
+INFO 2026-02-09 08:32:07,887 basehttp "GET /schedules/ HTTP/1.1" 200 18110
+INFO 2026-02-09 08:32:15,498 basehttp "GET /attendance/history/teacher/1/ HTTP/1.1" 200 24301
+INFO 2026-02-09 08:32:26,305 basehttp "GET /schedules/ HTTP/1.1" 200 18110
+INFO 2026-02-09 08:32:27,772 basehttp "GET /teacher/dashboard/ HTTP/1.1" 200 29508
+INFO 2026-02-09 08:32:33,380 basehttp "GET /schedules/ HTTP/1.1" 200 18110
+INFO 2026-02-09 08:32:36,136 basehttp "GET /teacher/dashboard/ HTTP/1.1" 200 29508
+INFO 2026-02-09 08:32:38,573 basehttp "GET /subjects/ HTTP/1.1" 200 16870
+INFO 2026-02-09 08:32:43,543 basehttp "GET /subjects/2/ HTTP/1.1" 200 18141
+INFO 2026-02-09 08:32:47,042 basehttp "GET /teacher/dashboard/ HTTP/1.1" 200 29508
+INFO 2026-02-09 08:32:49,265 basehttp "GET /profile/ HTTP/1.1" 302 0
+WARNING 2026-02-09 08:32:49,297 log Forbidden (Permission denied): /teachers/1/
+Traceback (most recent call last):
+  File "C:\Users\dokdo\anaconda3\envs\sjitcnn\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\dokdo\anaconda3\envs\sjitcnn\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\dokdo\anaconda3\envs\sjitcnn\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\dokdo\anaconda3\envs\sjitcnn\lib\site-packages\django\contrib\auth\mixins.py", line 73, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "C:\Users\dokdo\anaconda3\envs\sjitcnn\lib\site-packages\django\contrib\auth\mixins.py", line 134, in dispatch
+    return self.handle_no_permission()
+  File "C:\Users\dokdo\anaconda3\envs\sjitcnn\lib\site-packages\django\contrib\auth\mixins.py", line 48, in handle_no_permission
+    raise PermissionDenied(self.get_permission_denied_message())
+django.core.exceptions.PermissionDenied
+WARNING 2026-02-09 08:32:49,328 basehttp "GET /teachers/1/ HTTP/1.1" 403 135
+INFO 2026-02-09 08:33:01,117 basehttp "GET /schedules/2/attendance/ HTTP/1.1" 200 18932
+INFO 2026-02-09 08:33:05,931 basehttp "GET /teacher/dashboard/ HTTP/1.1" 200 29508
+INFO 2026-02-09 08:33:10,023 basehttp "GET /subjects/1/ HTTP/1.1" 200 18126
+INFO 2026-02-09 08:33:12,382 basehttp "GET /schedules/ HTTP/1.1" 200 18110
+INFO 2026-02-09 08:33:13,663 basehttp "GET /teacher/dashboard/ HTTP/1.1" 200 29508
+INFO 2026-02-09 08:33:38,564 basehttp "GET /schedules/ HTTP/1.1" 200 18110
+INFO 2026-02-09 08:33:40,882 basehttp "GET /schedules/1/ HTTP/1.1" 200 16451
+INFO 2026-02-09 08:33:49,237 basehttp "GET /password_change/ HTTP/1.1" 200 18280
+INFO 2026-02-09 08:33:51,504 basehttp "GET /profile/ HTTP/1.1" 302 0
+WARNING 2026-02-09 08:33:51,522 log Forbidden (Permission denied): /teachers/1/
+Traceback (most recent call last):
+  File "C:\Users\dokdo\anaconda3\envs\sjitcnn\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\dokdo\anaconda3\envs\sjitcnn\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\dokdo\anaconda3\envs\sjitcnn\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\dokdo\anaconda3\envs\sjitcnn\lib\site-packages\django\contrib\auth\mixins.py", line 73, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "C:\Users\dokdo\anaconda3\envs\sjitcnn\lib\site-packages\django\contrib\auth\mixins.py", line 134, in dispatch
+    return self.handle_no_permission()
+  File "C:\Users\dokdo\anaconda3\envs\sjitcnn\lib\site-packages\django\contrib\auth\mixins.py", line 48, in handle_no_permission
+    raise PermissionDenied(self.get_permission_denied_message())
+django.core.exceptions.PermissionDenied
+WARNING 2026-02-09 08:33:51,524 basehttp "GET /teachers/1/ HTTP/1.1" 403 135
+INFO 2026-02-09 08:36:22,546 basehttp "GET /logout/ HTTP/1.1" 302 0
+INFO 2026-02-09 08:36:22,585 basehttp "GET /login/ HTTP/1.1" 200 7738
+INFO 2026-02-09 08:36:34,877 authentication Authentication attempt for: john.tripoli@sjit.edu.ph
+INFO 2026-02-09 08:36:34,877 authentication Authentication attempt for: john.tripoli@sjit.edu.ph
+INFO 2026-02-09 08:36:35,502 authentication No student found with ID: john.tripoli@sjit.edu.ph
+INFO 2026-02-09 08:36:35,502 authentication No student found with ID: john.tripoli@sjit.edu.ph
+INFO 2026-02-09 08:36:35,513 basehttp "POST /login/ HTTP/1.1" 200 7997
+INFO 2026-02-09 08:37:07,951 authentication Authentication attempt for: 2310958
+INFO 2026-02-09 08:37:07,951 authentication Authentication attempt for: 2310958
+INFO 2026-02-09 08:37:08,511 authentication Found student with ID: 2310958, attempting to authenticate
+INFO 2026-02-09 08:37:08,511 authentication Found student with ID: 2310958, attempting to authenticate
+INFO 2026-02-09 08:37:09,144 authentication Authentication successful for student ID: 2310958
+INFO 2026-02-09 08:37:09,144 authentication Authentication successful for student ID: 2310958
+INFO 2026-02-09 08:37:09,178 basehttp "POST /login/ HTTP/1.1" 302 0
+INFO 2026-02-09 08:37:09,194 basehttp "GET / HTTP/1.1" 302 0
+INFO 2026-02-09 08:37:09,303 basehttp "GET /dashboard/ HTTP/1.1" 200 21431
+INFO 2026-02-09 08:37:31,426 basehttp "GET /profile/ HTTP/1.1" 302 0
+INFO 2026-02-09 08:37:31,478 basehttp "GET /students/2/ HTTP/1.1" 200 19727
+INFO 2026-02-09 08:37:37,861 basehttp "GET /subjects/1/ HTTP/1.1" 200 16990
+WARNING 2026-02-09 08:37:40,302 log Forbidden (Permission denied): /subjects/
+Traceback (most recent call last):
+  File "C:\Users\dokdo\anaconda3\envs\sjitcnn\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\dokdo\anaconda3\envs\sjitcnn\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\dokdo\anaconda3\envs\sjitcnn\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\dokdo\anaconda3\envs\sjitcnn\lib\site-packages\django\contrib\auth\mixins.py", line 73, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "C:\Users\dokdo\anaconda3\envs\sjitcnn\lib\site-packages\django\contrib\auth\mixins.py", line 134, in dispatch
+    return self.handle_no_permission()
+  File "C:\Users\dokdo\anaconda3\envs\sjitcnn\lib\site-packages\django\contrib\auth\mixins.py", line 48, in handle_no_permission
+    raise PermissionDenied(self.get_permission_denied_message())
+django.core.exceptions.PermissionDenied
+WARNING 2026-02-09 08:37:40,304 basehttp "GET /subjects/ HTTP/1.1" 403 135
+INFO 2026-02-09 08:37:42,744 basehttp "GET /dashboard/ HTTP/1.1" 200 20332
+INFO 2026-02-09 08:49:11,875 basehttp "GET /schedules/ HTTP/1.1" 302 0
+INFO 2026-02-09 08:49:11,963 basehttp "GET /student/schedule/ HTTP/1.1" 200 15934
+INFO 2026-02-09 08:49:14,995 basehttp "GET /schedules/2/ HTTP/1.1" 200 14462
+INFO 2026-02-09 08:49:16,561 basehttp "GET /schedules/ HTTP/1.1" 302 0
+INFO 2026-02-09 08:49:16,624 basehttp "GET /student/schedule/ HTTP/1.1" 200 15934
+INFO 2026-02-09 08:49:21,788 basehttp "GET /dashboard/ HTTP/1.1" 200 20332
+INFO 2026-02-09 08:49:30,554 basehttp "GET /logout/ HTTP/1.1" 302 0
+INFO 2026-02-09 08:49:30,600 basehttp "GET /login/ HTTP/1.1" 200 7738

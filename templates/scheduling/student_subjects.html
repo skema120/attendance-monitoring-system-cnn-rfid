@@ -1,0 +1,152 @@
+{% extends "base.html" %}
+
+{% block title %}{{ student.full_name }}'s Subjects - Classroom Scheduling System{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <!-- Student Information Card -->
+        <div class="col-md-4">
+            <div class="card shadow mb-4">
+                <div class="card-header">
+                    <h2 class="h4 mb-0">Student Information</h2>
+                </div>
+                <div class="card-body">
+                    <div class="text-center mb-4">
+                        <i class="fas fa-user-graduate fa-4x text-primary"></i>
+                        <h3 class="h5 mt-3">{{ student.full_name }}</h3>
+                        <p class="text-muted mb-0">
+                            <i class="fas fa-id-card"></i> {{ student.student_id }}
+                        </p>
+                        <p class="text-muted">
+                            <i class="fas fa-envelope"></i> {{ student.email }}
+                        </p>
+                    </div>
+                    
+                    <div class="d-grid gap-2">
+                        <a href="{% url 'student_list' %}" class="btn btn-secondary">
+                            <i class="fas fa-arrow-left"></i> Back to List
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Enrolled Subjects and Enrollment Form -->
+        <div class="col-md-8">
+            <!-- Enrolled Subjects Card -->
+            <div class="card shadow mb-4">
+                <div class="card-header d-flex justify-content-between align-items-center">
+                    <h3 class="h5 mb-0">Enrolled Subjects</h3>
+                    <span class="badge bg-primary">{{ enrolled_subjects.count }} subjects</span>
+                </div>
+                <div class="card-body">
+                    {% if enrolled_subjects %}
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Code</th>
+                                    <th>Subject</th>
+                                    <th>Teacher</th>
+                                    <th>Schedule</th>
+                                    {% if not user.student %}
+                                    <th>Actions</th>
+                                    {% endif %}
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for subject in enrolled_subjects %}
+                                <tr>
+                                    <td>{{ subject.code }}</td>
+                                    <td>{{ subject.name }}</td>
+                                    <td>{{ subject.teacher.full_name }}</td>
+                                    <td>
+                                        {% for schedule in subject.schedule_set.all %}
+                                        <div>
+                                            {{ schedule.get_day_display }}: 
+                                            {{ schedule.start_time|time:"H:i" }} - {{ schedule.end_time|time:"H:i" }}
+                                        </div>
+                                        {% endfor %}
+                                    </td>
+                                    {% if not user.student %}
+                                    <td>
+                                        <form method="post" action="{% url 'unenroll_student' subject.id %}" class="d-inline">
+                                            {% csrf_token %}
+                                            <input type="hidden" name="student_id" value="{{ student.id }}">
+                                            <button type="submit" class="btn btn-sm btn-danger" onclick="return confirm('Are you sure you want to unenroll from this subject?')">
+                                                <i class="fas fa-user-minus"></i> Unenroll
+                                            </button>
+                                        </form>
+                                    </td>
+                                    {% endif %}
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                    {% else %}
+                    <p class="text-muted text-center my-3">Student is not enrolled in any subjects yet.</p>
+                    {% endif %}
+                </div>
+            </div>
+
+            <!-- Dedicated Enrollment Form Card -->
+            {% if not user.student and available_subjects %}
+            <div class="card shadow mb-4">
+                <div class="card-header">
+                    <h3 class="h5 mb-0">Enroll in a New Subject</h3>
+                </div>
+                <div class="card-body">
+                    <form method="post" action="{% url 'enroll_student_in_subject' 0 %}" id="enrollForm">
+                        {% csrf_token %}
+                        <input type="hidden" name="student_id" value="{{ student.id }}">
+                        <div class="mb-3">
+                            <label for="subject" class="form-label">Select Subject</label>
+                            <select id="subject" name="subject_id" class="form-select" required>
+                                <option value="">Select a subject...</option>
+                                {% for subject in available_subjects %}
+                                <option value="{{ subject.pk }}">
+                                    {{ subject.code }} - {{ subject.name }} ({{ subject.teacher.full_name }})
+                                </option>
+                                {% endfor %}
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-success">
+                            <i class="fas fa-user-plus"></i> Enroll Student
+                        </button>
+                    </form>
+                </div>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</div>
+
+<!-- Toast Messages -->
+{% if messages %}
+<div class="position-fixed bottom-0 end-0 p-3" style="z-index: 5">
+    {% for message in messages %}
+    <div class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header {% if message.tags == 'error' %}bg-danger text-white{% else %}bg-success text-white{% endif %}">
+            <i class="fas {% if message.tags == 'error' %}fa-exclamation-circle{% else %}fa-check-circle{% endif %} me-2"></i>
+            <strong class="me-auto">{{ message.tags|title }}</strong>
+            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+        <div class="toast-body">
+            {{ message }}
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endif %}
+
+<script>
+document.getElementById('enrollForm').addEventListener('submit', function(e) {
+    const subjectSelect = document.getElementById('subject');
+    const form = this;
+    const action = form.getAttribute('action');
+    form.setAttribute('action', action.replace('0', subjectSelect.value));
+});
+</script>
+{% endblock %}

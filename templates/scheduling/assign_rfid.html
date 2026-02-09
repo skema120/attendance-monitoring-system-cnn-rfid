@@ -1,0 +1,97 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Assign RFID Card{% endblock %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+        <h1 class="h3 mb-0 text-gray-800">Assign RFID Card</h1>
+        <a href="{% url 'user_list' %}" class="d-none d-sm-inline-block btn btn-sm btn-secondary shadow-sm">
+            <i class="fas fa-arrow-left fa-sm text-white-50"></i> Back to User List
+        </a>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-8">
+            <div class="card shadow mb-4">
+                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                    <h6 class="m-0 font-weight-bold text-primary">RFID Assignment</h6>
+                </div>
+                <div class="card-body">
+                    <form method="post">
+                        {% csrf_token %}
+                        
+                        <div class="form-group">
+                            <label for="{{ form.user.id_for_label }}">{{ form.user.label }}</label>
+                            {{ form.user }}
+                            {% if form.user.errors %}
+                                <div class="invalid-feedback d-block">
+                                    {{ form.user.errors }}
+                                </div>
+                            {% endif %}
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="{{ form.rfid_uid.id_for_label }}">{{ form.rfid_uid.label }}</label>
+                            {{ form.rfid_uid }}
+                            <small class="form-text text-muted">Scan an RFID card to automatically populate this field</small>
+                            {% if form.rfid_uid.errors %}
+                                <div class="invalid-feedback d-block">
+                                    {{ form.rfid_uid.errors }}
+                                </div>
+                            {% endif %}
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">Assign RFID Card</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-4">
+            <div class="card shadow mb-4">
+                <div class="card-header py-3">
+                    <h6 class="m-0 font-weight-bold text-primary">Instructions</h6>
+                </div>
+                <div class="card-body">
+                    <p>To assign an RFID card to a user:</p>
+                    <ol>
+                        <li>Select the user from the dropdown</li>
+                        <li>Place the RFID card on the scanner</li>
+                        <li>The RFID UID field will be populated automatically</li>
+                        <li>Click "Assign RFID Card" to save</li>
+                    </ol>
+                    <p class="mb-0 text-info">
+                        <i class="fas fa-info-circle"></i> 
+                        This RFID card will be used for attendance tracking.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+    // Focus on the RFID field when the page loads
+    document.addEventListener('DOMContentLoaded', function() {
+        const rfidField = document.getElementById('{{ form.rfid_uid.id_for_label }}');
+        rfidField.focus();
+        
+        // Auto-submit when RFID is scanned (optional - only if you have a scanner that sends Enter)
+        rfidField.addEventListener('keypress', function(e) {
+            if (e.key === 'Enter' && rfidField.value.trim() !== '') {
+                // Check if a user is selected
+                const userSelect = document.getElementById('{{ form.user.id_for_label }}');
+                if (userSelect.value) {
+                    document.querySelector('form').submit();
+                } else {
+                    alert('Please select a user first');
+                }
+            }
+        });
+    });
+</script>
+{% endblock %}

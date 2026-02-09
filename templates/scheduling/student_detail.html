@@ -1,0 +1,218 @@
+{% extends "base.html" %}
+
+{% block title %}{{ student.full_name }} - Student Details{% endblock %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-8">
+            <div class="card shadow mb-4">
+                <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
+                    <h5 class="mb-0">
+                        <i class="fas fa-user-graduate me-2"></i>Student Information
+                    </h5>
+                    {% if user.is_superuser %}
+                    <div class="btn-group">
+                        <a href="{% url 'student_update' student.pk %}" class="btn btn-light btn-sm">
+                            <i class="fas fa-edit me-1"></i>Edit
+                        </a>
+                        <a href="{% url 'student_delete' student.pk %}" class="btn btn-danger btn-sm">
+                            <i class="fas fa-trash me-1"></i>Delete
+                        </a>
+                    </div>
+                    {% endif %}
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <dl class="row">
+                                <dt class="col-sm-4">Student ID</dt>
+                                <dd class="col-sm-8">{{ student.student_id }}</dd>
+
+                                <dt class="col-sm-4">First Name</dt>
+                                <dd class="col-sm-8">{{ student.first_name }}</dd>
+
+                                <dt class="col-sm-4">Middle Name</dt>
+                                <dd class="col-sm-8">{{ student.middle_name|default:"--" }}</dd>
+
+                                <dt class="col-sm-4">Last Name</dt>
+                                <dd class="col-sm-8">{{ student.last_name }}</dd>
+
+                                <dt class="col-sm-4">Email</dt>
+                                <dd class="col-sm-8">
+                                    <a href="mailto:{{ student.email }}">{{ student.email }}</a>
+                                </dd>
+                            </dl>
+                        </div>
+                        <div class="col-md-6">
+                            <dl class="row">
+                                <dt class="col-sm-4">Course</dt>
+                                <dd class="col-sm-8">{{ student.course }}</dd>
+
+                                <dt class="col-sm-4">Year Level</dt>
+                                <dd class="col-sm-8">{{ student.get_year_level_display }}</dd>
+
+                                <dt class="col-sm-4">Status</dt>
+                                <dd class="col-sm-8">
+                                    <span class="badge bg-{{ student.is_active|yesno:'success,danger' }}">
+                                        {{ student.is_active|yesno:'Active,Inactive' }}
+                                    </span>
+                                </dd>
+
+                                {% if user.is_superuser %}
+                                <dt class="col-sm-4">Username</dt>
+                                <dd class="col-sm-8">{{ student.student_id }}</dd>
+
+                                <dt class="col-sm-4">Password</dt>
+                                <dd class="col-sm-8">
+                                    {% if student.default_password %}
+                                    <code>{{ student.default_password }}</code>
+                                    {% else %}
+                                    <em>Hidden</em>
+                                    {% endif %}
+                                    <form method="post" action="{% url 'reset_student_password' student.pk %}" class="d-inline ms-2">
+                                        {% csrf_token %}
+                                        <button type="submit" class="btn btn-sm btn-warning" onclick="return confirm('Are you sure you want to reset this student\'s password?')">
+                                            <i class="fas fa-key"></i> Reset
+                                        </button>
+                                    </form>
+                                </dd>
+                                {% endif %}
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Enrolled Subjects -->
+            <div class="card shadow">
+                <div class="card-header bg-info text-white d-flex justify-content-between align-items-center">
+                    <h5 class="mb-0">
+                        <i class="fas fa-book me-2"></i>Enrolled Subjects
+                    </h5>
+                    {% if user.is_superuser %}
+                    <a href="{% url 'student_subjects' student.pk %}" class="btn btn-light btn-sm">
+                        <i class="fas fa-pencil-alt me-1"></i>Manage Subjects
+                    </a>
+                    {% endif %}
+                </div>
+                <div class="card-body">
+                    {% if enrolled_subjects %}
+                    <div class="table-responsive">
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Subject Code</th>
+                                    <th>Subject Name</th>
+                                    <th>Teacher</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for subject in enrolled_subjects %}
+                                <tr>
+                                    <td>{{ subject.code }}</td>
+                                    <td>{{ subject.name }}</td>
+                                    <td>{{ subject.teacher.full_name }}</td>
+                                    <td>
+                                        <a href="{% url 'subject_detail' subject.id %}" class="btn btn-sm btn-outline-primary">
+                                            <i class="fas fa-eye"></i> View
+                                        </a>
+                                    </td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                    {% else %}
+                    <div class="text-center py-4">
+                        <div class="mb-3">
+                            <i class="fas fa-book-open fa-3x text-muted"></i>
+                        </div>
+                        <h5 class="text-muted">No subjects enrolled</h5>
+                        {% if user.is_superuser %}
+                        <a href="{% url 'student_subjects' student.pk %}" class="btn btn-primary mt-2">
+                            <i class="fas fa-plus me-1"></i>Enroll in Subjects
+                        </a>
+                        {% endif %}
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+
+        <!-- Schedule Card -->
+        <div class="col-md-4">
+            <div class="card shadow">
+                <div class="card-header bg-success text-white">
+                    <h5 class="mb-0">
+                        <i class="fas fa-calendar-alt me-2"></i>Weekly Schedule
+                    </h5>
+                </div>
+                <div class="card-body">
+                    {% if schedules %}
+                    {% regroup schedules by get_day_display as schedule_days %}
+                    {% for day_group in schedule_days %}
+                    <h6 class="border-bottom pb-2 mb-3">{{ day_group.grouper }}</h6>
+                    {% for schedule in day_group.list %}
+                    <div class="schedule-item mb-3">
+                        <div class="d-flex justify-content-between">
+                            <strong>{{ schedule.subject.code }}</strong>
+                            <span class="text-muted">
+                                {{ schedule.start_time|time:"g:i A" }} - {{ schedule.end_time|time:"g:i A" }}
+                            </span>
+                        </div>
+                        <div class="small text-muted">
+                            {{ schedule.subject.name }}<br>
+                            Room: {{ schedule.classroom.room_number }}<br>
+                            Teacher: {{ schedule.subject.teacher.full_name }}
+                        </div>
+                    </div>
+                    {% endfor %}
+                    {% empty %}
+                    <div class="text-center py-4">
+                        <i class="fas fa-calendar-times fa-3x text-muted mb-3"></i>
+                        <p class="text-muted">No scheduled classes</p>
+                    </div>
+                    {% endfor %}
+                    {% else %}
+                    <div class="text-center py-4">
+                        <i class="fas fa-calendar-times fa-3x text-muted mb-3"></i>
+                        <p class="text-muted">No scheduled classes</p>
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mt-4">
+        <a href="{% url 'student_list' %}" class="btn btn-secondary">
+            <i class="fas fa-arrow-left me-1"></i>Back to Students
+        </a>
+    </div>
+</div>
+
+<style>
+.schedule-item {
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #f8f9fa;
+    transition: all 0.3s;
+}
+.schedule-item:hover {
+    background-color: #e9ecef;
+    transform: translateY(-1px);
+}
+.btn-group .btn {
+    margin-right: 2px;
+}
+.btn-group .btn:last-child {
+    margin-right: 0;
+}
+dt {
+    font-weight: 600;
+    color: #495057;
+}
+</style>
+{% endblock %}

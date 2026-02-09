@@ -1,0 +1,77 @@
+{% extends 'scheduling/base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-header">
+                    <h2>Student Enrollment</h2>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4>Select Student</h4>
+                                </div>
+                                <div class="card-body">
+                                    <div class="list-group">
+                                        {% for student in students %}
+                                            <a href="{% url 'enroll_student' %}?student_id={{ student.id }}" 
+                                               class="list-group-item list-group-item-action">
+                                                {{ student.full_name }} (ID: {{ student.student_id }})
+                                            </a>
+                                        {% empty %}
+                                            <p class="text-muted">No students available.</p>
+                                        {% endfor %}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4>Quick Stats</h4>
+                                </div>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="card bg-primary text-white mb-3">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Total Students</h5>
+                                                    <p class="card-text display-4">{{ total_students }}</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="card bg-success text-white mb-3">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Total Subjects</h5>
+                                                    <p class="card-text display-4">{{ total_subjects }}</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="card bg-info text-white">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Average Subjects per Student</h5>
+                                                    <p class="card-text display-4">{{ avg_subjects_per_student|floatformat:1 }}</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %} 

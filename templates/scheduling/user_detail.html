@@ -1,0 +1,151 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="card">
+    <div class="card-header d-flex justify-content-between align-items-center">
+        <h2>User Details</h2>
+        <div>
+            <a href="{% url 'user_list' %}" class="btn btn-secondary">
+                <i class="fas fa-arrow-left"></i> Back to List
+            </a>
+            <a href="{% url 'user_edit' user_obj.id %}" class="btn btn-primary">
+                <i class="fas fa-edit"></i> Edit
+            </a>
+            <a href="{% url 'user_delete' user_obj.id %}" class="btn btn-danger">
+                <i class="fas fa-trash"></i> Delete
+            </a>
+        </div>
+    </div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-md-6">
+                <h4 class="mb-3">Basic Information</h4>
+                <table class="table">
+                    <tr>
+                        <th>Username:</th>
+                        <td>{{ user_obj.username }}</td>
+                    </tr>
+                    <tr>
+                        <th>Email:</th>
+                        <td>{{ user_obj.email }}</td>
+                    </tr>
+                    <tr>
+                        <th>Date Joined:</th>
+                        <td>{{ user_obj.date_joined|date:"F d, Y" }}</td>
+                    </tr>
+                    <tr>
+                        <th>Last Login:</th>
+                        <td>{{ user_obj.last_login|date:"F d, Y H:i" }}</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col-md-6">
+                <h4 class="mb-3">User Status</h4>
+                <table class="table">
+                    <tr>
+                        <th>User Type:</th>
+                        <td>
+                            {% if user_obj.is_superuser %}
+                                <span class="badge bg-danger">Admin</span>
+                            {% elif user_obj.teacher %}
+                                <span class="badge bg-primary">Teacher</span>
+                            {% elif user_obj.student %}
+                                <span class="badge bg-success">Student</span>
+                            {% else %}
+                                <span class="badge bg-secondary">Regular User</span>
+                            {% endif %}
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Role:</th>
+                        <td>
+                            {% if user_obj.is_superuser %}
+                                <span class="badge bg-danger">Superuser</span>
+                            {% elif user_obj.is_staff %}
+                                <span class="badge bg-warning">Staff</span>
+                            {% else %}
+                                <span class="badge bg-info">Regular</span>
+                            {% endif %}
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Active:</th>
+                        <td>
+                            {% if user_obj.is_active %}
+                                <span class="badge bg-success">Yes</span>
+                            {% else %}
+                                <span class="badge bg-danger">No</span>
+                            {% endif %}
+                        </td>
+                    </tr>
+                    <!-- RFID Card information will be shown after database migration -->
+                    <tr>
+                        <th>RFID Card:</th>
+                        <td>
+                            <span class="badge bg-warning"></span>
+                            <a href="{% url 'assign_rfid' %}?user={{ user_obj.id }}" class="btn btn-sm btn-outline-primary ml-2">
+                                <i class="fas fa-plus"></i> Assign
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        {% if is_teacher %}
+        <div class="row mt-4">
+            <div class="col-12">
+                <h4 class="mb-3">Teacher Information</h4>
+                <table class="table">
+                    <tr>
+                        <th>Name:</th>
+                        <td>{{ user_obj.teacher.first_name }} {{ user_obj.teacher.middle_name }} {{ user_obj.teacher.last_name }}</td>
+                    </tr>
+                    <tr>
+                        <th>Address:</th>
+                        <td>{{ user_obj.teacher.address }}</td>
+                    </tr>
+                    <tr>
+                        <th>Email:</th>
+                        <td>{{ user_obj.teacher.email }}</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        {% endif %}
+
+        {% if is_student %}
+        <div class="row mt-4">
+            <div class="col-12">
+                <h4 class="mb-3">Student Information</h4>
+                <table class="table">
+                    <tr>
+                        <th>Student ID:</th>
+                        <td>{{ student.student_id }}</td>
+                    </tr>
+                    <tr>
+                        <th>Name:</th>
+                        <td>{{ student.first_name }} {% if student.middle_name %}{{ student.middle_name }} {% endif %}{{ student.last_name }}</td>
+                    </tr>
+                    <tr>
+                        <th>Address:</th>
+                        <td>{{ student.address }}</td>
+                    </tr>
+                    <tr>
+                        <th>Course:</th>
+                        <td>{{ student.course }}</td>
+                    </tr>
+                    <tr>
+                        <th>Year Level:</th>
+                        <td>{{ student.year_level }}</td>
+                    </tr>
+                    <tr>
+                        <th>Email:</th>
+                        <td>{{ student.email }}</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}

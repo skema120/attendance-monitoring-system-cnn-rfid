@@ -1,0 +1,28 @@
+{% load static %}
+
+<!-- Student Sidebar -->
+<nav id="sidebar" class="bg-dark">
+    <div class="sidebar-header">
+        <h3>Classroom Scheduling</h3>
+    </div>
+
+    <ul class="list-unstyled components">
+        <!-- Dashboard Link -->
+        <li>
+            <a href="{% url 'student_dashboard' %}"><i class="fas fa-tachometer-alt me-2"></i>Student Dashboard</a>
+        </li>
+
+        <hr class="sidebar-divider my-2">
+
+        <!-- Student Navigation -->
+        <li class="sidebar-heading">
+            <span class="text-light">Student Navigation</span>
+        </li>
+        <li>
+            <a href="{% url 'schedule_list' %}"><i class="fas fa-calendar-alt me-2"></i>My Schedule</a>
+        </li>
+        <li>
+            <a href="{% url 'profile' %}"><i class="fas fa-user me-2"></i>My Profile</a>
+        </li>
+    </ul>
+</nav> 

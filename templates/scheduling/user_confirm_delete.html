@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="card">
+    <div class="card-header bg-danger text-white">
+        <h2>Confirm Delete</h2>
+    </div>
+    <div class="card-body">
+        <div class="alert alert-warning">
+            <h4 class="alert-heading"><i class="fas fa-exclamation-triangle"></i> Warning!</h4>
+            <p>Are you sure you want to delete the user <strong>{{ user_obj.username }}</strong>?</p>
+            <p>This action cannot be undone and will remove all associated data.</p>
+            
+            {% if user_obj.is_superuser %}
+            <div class="alert alert-danger">
+                <strong>Caution:</strong> This is a superuser account. Deleting it may affect system administration capabilities.
+            </div>
+            {% endif %}
+            
+            {% if user_obj.teacher %}
+            <div class="alert alert-info">
+                <strong>Note:</strong> This user is associated with a teacher profile. Deleting this user will also delete the teacher profile and may affect schedules and subjects.
+            </div>
+            {% endif %}
+            
+            {% if user_obj.student %}
+            <div class="alert alert-info">
+                <strong>Note:</strong> This user is associated with a student profile. Deleting this user will also delete the student profile and may affect enrollments.
+            </div>
+            {% endif %}
+        </div>
+        
+        <form method="post">
+            {% csrf_token %}
+            <div class="d-flex justify-content-end">
+                <a href="{% url 'user_list' %}" class="btn btn-secondary me-2">
+                    <i class="fas fa-times"></i> Cancel
+                </a>
+                <button type="submit" class="btn btn-danger">
+                    <i class="fas fa-trash"></i> Confirm Delete
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Teacher Created Successfully - Classroom Scheduling System{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow">
+                <div class="card-header bg-primary text-white">
+                    <h3 class="card-title mb-0">Teacher Created Successfully</h3>
+                </div>
+                <div class="card-body text-center py-5">
+                    <div class="mb-4">
+                        <div class="bg-success text-white rounded-circle d-inline-flex align-items-center justify-content-center" style="width: 80px; height: 80px;">
+                            <i class="fas fa-check fa-3x"></i>
+                        </div>
+                    </div>
+
+                    <h4 class="mb-3">New teacher account has been created!</h4>
+                    <p class="text-muted mb-4">The teacher has been added to the system successfully.</p>
+
+                    {% if username and password %}
+                    <div class="alert alert-info mb-4">
+                        <h5 class="alert-heading">Account Credentials</h5>
+                        <p class="mb-1"><strong>Username:</strong> {{ username }}</p>
+                        <p class="mb-0"><strong>Password:</strong> {{ password }}</p>
+                    </div>
+                    {% endif %}
+
+                    <div class="d-grid gap-2 col-md-6 mx-auto">
+                        <a href="{% url 'teacher_list' %}" class="btn btn-primary">
+                            <i class="fas fa-list me-2"></i>Back to Teacher List
+                        </a>
+                        <a href="{% url 'admin_dashboard' %}" class="btn btn-outline-primary">
+                            <i class="fas fa-home me-2"></i>Go to Dashboard
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %} 
