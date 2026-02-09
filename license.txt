@@ -1,0 +1,12 @@
+Copyright (c) 2026. All Rights Reserved.
+
+NOTICE: All information contained herein is, and remains the property of the Copyright Holder. The intellectual and technical concepts contained herein are proprietary and may be covered by patents, patents in process, and are protected by trade secret or copyright law.
+
+Dissemination of this information or reproduction of this material is strictly forbidden unless prior written permission is obtained from the Copyright Holder.
+
+This software is provided for portfolio and demonstration purposes only.
+
+TERM OF LICENSE:
+1. RIGHTS: You are NOT allowed to copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software.
+2. USE: You may view the code for educational or evaluation purposes only.
+3. WARRANTY: The Software is provided "as is", without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose and noninfringement. In no event shall the authors or copyright holders be liable for any claim, damages or other liability, whether in an action of contract, tort or otherwise, arising from, out of or in connection with the Software or the use or other dealings in the Software.
