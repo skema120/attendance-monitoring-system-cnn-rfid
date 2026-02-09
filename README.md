@@ -1,141 +1,76 @@
-# Classroom Scheduling System
+# Attendance Monitoring System using CNN and RFID
 
-A modern and efficient classroom scheduling system built with Django, featuring a beautiful UI and comprehensive management tools for teachers, students, subjects, and schedules.
+A robust, intelligent web application built with Python and Django. This system is designed to automate student attendance using Biometric Face Recognition (CNN) and RFID hardware, handling complex scheduling conflicts, redundancy checks, and role-based access control.
 
-## Features
+## 📋 Features (Meeting Requirements)
 
-- **User Authentication & Authorization**
-  - Secure login/logout system
-  - Role-based access control (Superuser/User)
-  - Password management
-  - Session security
+### Core Functionality
+* **Dual Authentication:** Uses **Convolutional Neural Networks (CNN)** with `FaceNet` and `TensorFlow` for facial recognition, plus an **RFID** hardware fallback for reliability.
+* **Role-Based Access:** Distinct portals for **Admins** (Configuration), **Teachers** (Attendance Execution), and **Students** (Monitoring).
+* **Real-time Processing:** Utilizes `OpenCV` and `Threading` to handle live video feeds for face detection without blocking the web interface.
+* **Data Integrity:** Securely maps recognized faces to Student IDs using a trained classifier model.
 
-- **Information Management**
-  - Teacher management
-  - Student management
-  - Classroom management
-  - Subject management
-  - Schedule management
+### 🌟 Bonus Features Implemented
+1.  **Conflict Detection:** The scheduler implements a validation algorithm that checks Time, Date, and Room availability. If a new class overlaps with an existing one, the system blocks the creation to prevent double-booking.
+2.  **Anti-Redundancy Logic:** The system tracks the "Checked-In" state of every student per session. If a student scans their face or taps their RFID card a second time, the system rejects the duplicate entry and notifies that they are "Already Checked In."
+3.  **Automated Notifications:** Integrated `django.core.mail` to send system alerts or attendance reports.
+4.  **Face Preprocessing:** Includes a dedicated `preprocess` module to align and crop faces before training, improving recognition accuracy.
 
-- **Modern UI/UX**
-  - Responsive dashboard
-  - Mobile-friendly design
-  - Real-time statistics
-  - Interactive navigation
-  - Beautiful forms and lists
+## 🛠️ Installation
 
-## Prerequisites
+1.  **Prerequisites:**
+    * Python 3.x installed.
+    * Webcam (for Face Recognition).
+    * RFID Reader (RC522 connected to Microcontroller/GPIO).
 
-- Python 3.8 or higher
-- MySQL (via XAMPP)
-- pip (Python package manager)
+2.  **Install Dependencies:**
+    ```bash
+    pip install django opencv-python tensorflow pillow numpy
+    # Note: Requires tensorflow.compat.v1 support
+    ```
 
-## Installation
+## 📝 Limitations & Assumptions
+1.  **Hardware Dependency:** The system assumes a camera and RFID reader are connected to the host machine or accessible via network stream.
+2.  **Lighting Conditions:** Face recognition accuracy relies on adequate lighting during the "Start Attendance" session.
 
-1. Clone the repository:
-   ```bash
-   git clone <repository-url>
-   cd itelec2
-   ```
+## 🚀 How to Run
 
-2. Create a virtual environment:
-   ```bash
-   python -m venv venv
-   ```
+1.  Clone this repository.
+2.  **Database Setup:**
+    ```bash
+    python manage.py makemigrations
+    python manage.py migrate
+    ```
+3.  **Train the Model:**
+    * Ensure student photos are in the `dataset` folder.
+    * Run the training script (e.g., `python training.py`) to generate the classifier.
+4.  **Run the Server:**
+    ```bash
+    python manage.py runserver
+    ```
+5.  **Teacher Action:**
+    * Log in as a Teacher.
+    * Navigate to "My Subjects" and click **"Start Attendance"**.
+    * The system will open the camera feed/RFID listener.
 
-3. Activate the virtual environment:
-   - Windows:
-     ```bash
-     venv\Scripts\activate
-     ```
-   - Linux/Mac:
-     ```bash
-     source venv/bin/activate
-     ```
+## 📂 System Roles
 
-4. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
+The system is architected around three specific user levels:
 
-5. Configure MySQL database:
-   - Start XAMPP and ensure MySQL is running
-   - Create a new database named 'scheduling'
-
-6. Apply migrations:
-   ```bash
-   python manage.py migrate
-   ```
-
-7. Create a superuser:
-   ```bash
-   python manage.py createsuperuser
-   ```
-
-8. Run the development server:
-   ```bash
-   python manage.py runserver
-   ```
-
-9. Access the application:
-   - Open your browser and navigate to `http://localhost:8000`
-   - Login with your superuser credentials
-
-## Usage
-
-1. **Dashboard**
-   - View quick statistics
-   - Access today's schedule
-   - Quick navigation to all features
-
-2. **User Management**
-   - Create and manage user accounts
-   - Assign roles (Superuser/User)
-   - Change passwords
-
-3. **Schedule Management**
-   - Create and edit class schedules
-   - View schedules by room, teacher, or student
-   - Automatic conflict detection
-
-4. **Information Management**
-   - Add/Edit/Delete teachers
-   - Manage student records
-   - Configure classrooms
-   - Set up subjects
-
-## Security Features
-
-- CSRF protection
-- Secure password hashing
-- Session management
-- Form validation
-- Protected routes
-
-## Tech Stack
-
-- **Backend**: Django 4.2.7
-- **Database**: MySQL
-- **Frontend**: Bootstrap 5.2.3
-- **Icons**: Font Awesome 6.0
-- **Additional Libraries**:
-  - django-crispy-forms
-  - crispy-bootstrap5
-  - Pillow
-  - python-dotenv
-
-## Contributing
-
-1. Fork the repository
-2. Create your feature branch
-3. Commit your changes
-4. Push to the branch
-5. Create a new Pull Request
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## Support
-
-For support, please contact the development team or raise an issue in the repository.
+```json
+{
+    "User_Roles": [
+        {
+            "Role": "Admin",
+            "Access": "Full CRUD on Users, Conflict-Free Scheduling, Classroom Management"
+        },
+        {
+            "Role": "Teacher",
+            "Access": "Start Attendance (CNN/RFID), Manual Override, View Class History"
+        },
+        {
+            "Role": "Student",
+            "Access": "View Enrolled Subjects, Check Attendance Status"
+        }
+    ]
+}
